@@ -4,7 +4,7 @@ uk_letters = ['а', 'б', 'в', 'г', 'ґ', 'д', 'е', 'є', 'ж', 'з', 'и', 
               'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я']
 
 
-def func(word):
+def word2phonemes(word):
     graphemes = []
     for index, letter in enumerate(word):
         if letter in letter_mapping:
@@ -25,4 +25,4 @@ def func(word):
 if __name__ == '__main__':
     words = ["дивний", 'яєшня', "їжак", "подивись", 'юнайтед', 'дьоготь']
     for w in words:
-        print(func(w))
+        print(word2phonemes(w))
