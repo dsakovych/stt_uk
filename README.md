@@ -1,1 +1,3 @@
-# stt_uk
+# Speech2text for Ukrainian language
+
+tba
