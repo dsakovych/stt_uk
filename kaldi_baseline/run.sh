@@ -13,7 +13,7 @@ export SRILM=/home/dima/kaldi/tools/srilm
 export PATH=${PATH}:${SRILM}/bin:${SRILM}/bin/i686-m64
 
 
-nj=12       # number of parallel jobs
+nj=1       # number of parallel jobs, less or equal speakers number in train/test
 lm_order=2  # language model order (n-gram quantity)
 
 # Safety mechanism (possible running this script with modified arguments)
