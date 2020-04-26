@@ -38,3 +38,4 @@ As it is a baseline, current purpose is just to make it work.
 * Place model to appropriate folder in kaldi project  
 * fill [config.py](config.py)  
 * run [stt_decode.py](utils/stt_decode.py) with file_path argument
+* if necessary, modify scoring script [score.sh](kaldi_baseline/local/score.sh)  
