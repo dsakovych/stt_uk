@@ -25,7 +25,7 @@ As it is a baseline, current purpose is just to make it work.
 | Source                | link                                              |
 | --------------------- |---------------------------------------------------|
 | voxforge              | http://www.repository.voxforge1.org/downloads/uk/ |
-| youtube (in progress) | http://www.repository.voxforge1.org/downloads/uk/ |
+| youtube (in progress) | [youtube-data.xlsx](data/youtube-data.xlsx)  |
 
 ## How to run
 * build [Kaldi](https://github.com/kaldi-asr/kaldi) from source
