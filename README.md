@@ -18,6 +18,7 @@ As it is a baseline, current purpose is just to make it work.
 | Model         | LM order      | train/test, hours | WAcc, %|
 | ------------- |:-------------:| ----------------: |-------:|
 | mono          | 2             |  1 / 0.1          |4     % |
+| mono          | 2             |  5 / 1            |9     % |
 
 
 ## Data source
