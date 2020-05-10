@@ -8,7 +8,7 @@ System contains of g2p model and kaldi training recipe.
 [G2P function](utils/g2p.py)  
 TODO: try https://github.com/sequitur-g2p/sequitur-g2p
 
-**acoustic model**: trained on 1 hour of voxforge data.  
+**acoustic model**: trained on X hour of voxforge data.  
 [training recipe](kaldi_baseline/run.sh)  
 As it is a baseline, current purpose is just to make it work.
 
