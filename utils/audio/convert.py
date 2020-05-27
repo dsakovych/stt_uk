@@ -24,3 +24,8 @@ def transform_wav(input_path, output_path=None, sr=16000):
     except Exception as e:
         logging.error(f"Error occured for input_path={input_path}", exc_info=True)
         return "Failed!"
+
+
+if __name__ == '__main__':
+    transform_wav('/home/dima/Projects/stt_uk/data/recorded_samples/sample2.wav',
+                  '/data/recorded_samples/sample2.wav')
