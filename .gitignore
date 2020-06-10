@@ -17,3 +17,6 @@ venv/
 # audio data
 *.wav
 *.mp3
+
+# ignore data files
+data
