@@ -17,9 +17,3 @@ venv/
 # audio data
 *.wav
 *.mp3
-
-# ignore data
-kaldi/kaldi_baseline/data
-kaldi/kaldi_baseline/audio
-
-data/voxforge

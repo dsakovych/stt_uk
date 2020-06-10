@@ -3,9 +3,9 @@ import sox
 import logging
 
 
-def transform_wav(input_path, output_path=None, sr=16000):
+def transform_audio_file(input_path, output_path=None, rate=8000):
     conf = {
-        "rate": sr,
+        "rate": rate,
         "bits": 16,
         "channels": 1
     }
@@ -22,10 +22,5 @@ def transform_wav(input_path, output_path=None, sr=16000):
         tfm.build(input_path, output_path)
         return "Done!"
     except Exception as e:
-        logging.error(f"Error occured for input_path={input_path}", exc_info=True)
+        logging.error(f"Error occured for input_path={input_path} and output_path={output_path}", exc_info=True)
         return "Failed!"
-
-
-if __name__ == '__main__':
-    transform_wav('/home/dima/Projects/stt_uk/data/recorded_samples/sample2.wav',
-                  '/data/recorded_samples/sample2.wav')
