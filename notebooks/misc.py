@@ -66,4 +66,6 @@ if __name__ == "__main__":
     # srv1_url = ([""] + [item['url'] for item in get_yt_subtitles(url2) if item.get('ext') == 'srv1'])[-1]
     # res1 = parse_subtitles(srv1_url)
     # print(res1)
-    get_yt_audio(url2)
+    # get_yt_audio(url2)
+    res = get_yt_subtitles(url2)
+    print(res)
