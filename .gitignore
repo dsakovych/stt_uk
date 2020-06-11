@@ -20,3 +20,5 @@ venv/
 
 # ignore data files
 data
+
+models/tf_checkpoints

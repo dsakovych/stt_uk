@@ -6,8 +6,7 @@ APP_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(APP_DIR, "data")
 TMP_DIR = os.path.join(APP_DIR, "tmp")
 KALDI_PATH = os.environ.get("KALDI_ROOT", "/home/dima/kaldi")
-
-s5_path = os.path.join(KALDI_PATH, "egs", "babel", "s5d")
+s5_path = os.path.join(KALDI_PATH, "egs", "stt_uk", "s5")
 
 data = {
     "voxforge": os.path.join(DATA_DIR, "voxforge"),

@@ -1,0 +1,4134 @@
+---------------------------------------------------------------------
+Preparing data on Wed Jun 10 23:33:27 UTC 2020
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+Training language model on Wed Jun 10 23:33:27 UTC 2020
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+Creating L.fst etc in data/lang on Wed Jun 10 23:33:27 UTC 2020
+---------------------------------------------------------------------
+
+utils/prepare_lang.sh --share-silence-phones true data/local <UNK> data/local/lang data/lang
+Checking data/local/silence_phones.txt ...
+--> reading data/local/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/silence_phones.txt is OK
+
+Checking data/local/optional_silence.txt ...
+--> reading data/local/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/optional_silence.txt is OK
+
+Checking data/local/nonsilence_phones.txt ...
+--> reading data/local/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lexicon.txt
+--> reading data/local/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexicon.txt is OK
+
+Checking data/local/extra_questions.txt ...
+--> data/local/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local]
+
+**Creating data/local/lexiconp.txt from data/local/lexicon.txt
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 316 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 326 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 17 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 42 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+
+---------------------------------------------------------------------
+Training SRILM language models on Wed Jun 10 23:33:37 UTC 2020
+---------------------------------------------------------------------
+
+local/train_lms_srilm.sh --oov-symbol <UNK> --train-text data/train/text data data/srilm
+-------------------------------------
+Building an SRILM language model
+-------------------------------------
+Using words file: data/lang/words.txt
+Using train text: 9/10 of data/train/text
+Using dev text  : 1/10 of data/train/text
+vocab contains 72520 lines, 0 words
+Removed first word (uid) from every line of data/srilm/train_text
+data/srilm/train_text contains 510336 words, 31117 sentences
+train.txt contains 510338 words, 31117 sentences
+Removed first word (uid) from every line of data/srilm/dev_text
+data/srilm/dev_text contains 56957 words, 3457 sentences
+data/srilm/dev.txt contains 56957 words, 3457 sentences
+-------------------
+Good-Turing 2grams
+-------------------
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+-------------------
+Kneser-Ney 2grams
+-------------------
+-------------------
+Good-Turing 3grams
+-------------------
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+-------------------
+Kneser-Ney 3grams
+-------------------
+-------------------
+Good-Turing 4grams
+-------------------
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+warning: discount coeff 1 is out of range: 0
+-------------------
+Kneser-Ney 4grams
+-------------------
+-------------------
+Maxent 2grams
+-------------------
+Starting fitting...
+Starting OWL-BFGS with c1=9.23438e-07, sigma2=3.24873e+06, max_iters=1000
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 11.1916
+  regularized dual is 11.1916
+  norm of gradient =0.0791364
+  norm of regularized gradient =0.0791364
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 11.1125
+  regularized dual is 11.1125
+  norm of gradient =0.0791187
+  norm of regularized gradient =0.0791183
+Iteration 1
+  No of NaNs in logZs: 0, No infs: 68681
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0320163
+  norm of regularized gradient =0.0313858
+  No of NaNs in logZs: 0, No infs: 68681
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0545224
+  norm of regularized gradient =0.0539825
+  No of NaNs in logZs: 0, No infs: 28
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.925527
+  norm of regularized gradient =0.925729
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 310.095
+  regularized dual is 310.144
+  norm of gradient =0.945524
+  norm of regularized gradient =0.945625
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 155.371
+  regularized dual is 155.383
+  norm of gradient =0.945524
+  norm of regularized gradient =0.945575
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 78.0091
+  regularized dual is 78.0122
+  norm of gradient =0.945524
+  norm of regularized gradient =0.94555
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 39.3282
+  regularized dual is 39.329
+  norm of gradient =0.945524
+  norm of regularized gradient =0.945537
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 19.9878
+  regularized dual is 19.988
+  norm of gradient =0.945504
+  norm of regularized gradient =0.945511
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.7623
+  regularized dual is 10.7624
+  norm of gradient =0.586849
+  norm of regularized gradient =0.586852
+Iteration 2
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 40.7732
+  regularized dual is 40.7768
+  norm of gradient =0.634857
+  norm of regularized gradient =0.634877
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 22.7353
+  regularized dual is 22.7364
+  norm of gradient =0.593374
+  norm of regularized gradient =0.593385
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 13.7985
+  regularized dual is 13.7989
+  norm of gradient =0.559146
+  norm of regularized gradient =0.559153
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.0689
+  regularized dual is 10.0691
+  norm of gradient =0.276746
+  norm of regularized gradient =0.276751
+Iteration 3
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.2068
+  regularized dual is 10.2069
+  norm of gradient =0.0759741
+  norm of regularized gradient =0.0759729
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.66424
+  regularized dual is 9.66436
+  norm of gradient =0.0714163
+  norm of regularized gradient =0.0714129
+Iteration 4
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.48481
+  regularized dual is 9.48495
+  norm of gradient =0.063779
+  norm of regularized gradient =0.0637752
+Iteration 5
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 13.4793
+  regularized dual is 13.4798
+  norm of gradient =0.644136
+  norm of regularized gradient =0.644142
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.83925
+  regularized dual is 9.83952
+  norm of gradient =0.299892
+  norm of regularized gradient =0.299897
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.26155
+  regularized dual is 9.26175
+  norm of gradient =0.0391653
+  norm of regularized gradient =0.0391649
+Iteration 6
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.19214
+  regularized dual is 9.19237
+  norm of gradient =0.0281169
+  norm of regularized gradient =0.0281175
+Iteration 7
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.09171
+  regularized dual is 9.09199
+  norm of gradient =0.0253567
+  norm of regularized gradient =0.0253565
+Iteration 8
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.4459
+  regularized dual is 10.4468
+  norm of gradient =0.267012
+  norm of regularized gradient =0.267019
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.02758
+  regularized dual is 9.0281
+  norm of gradient =0.0817601
+  norm of regularized gradient =0.0817643
+Iteration 9
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.8441
+  regularized dual is 8.84457
+  norm of gradient =0.0156772
+  norm of regularized gradient =0.0156736
+Iteration 10
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.78091
+  regularized dual is 8.78145
+  norm of gradient =0.0133569
+  norm of regularized gradient =0.0133498
+Iteration 11
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.89511
+  regularized dual is 8.89627
+  norm of gradient =0.109151
+  norm of regularized gradient =0.109156
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.66648
+  regularized dual is 8.66728
+  norm of gradient =0.0396949
+  norm of regularized gradient =0.0396945
+Iteration 12
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.73444
+  regularized dual is 8.73547
+  norm of gradient =0.220682
+  norm of regularized gradient =0.220685
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.61753
+  regularized dual is 8.61845
+  norm of gradient =0.0554693
+  norm of regularized gradient =0.0554708
+Iteration 13
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.57238
+  regularized dual is 8.57336
+  norm of gradient =0.0265552
+  norm of regularized gradient =0.026556
+Iteration 14
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.49178
+  regularized dual is 8.49299
+  norm of gradient =0.0173264
+  norm of regularized gradient =0.0173265
+Iteration 15
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.41691
+  regularized dual is 8.41832
+  norm of gradient =0.012837
+  norm of regularized gradient =0.0128355
+Iteration 16
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.33315
+  regularized dual is 8.33517
+  norm of gradient =0.019412
+  norm of regularized gradient =0.0194102
+Iteration 17
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.30484
+  regularized dual is 8.30705
+  norm of gradient =0.0477753
+  norm of regularized gradient =0.047778
+Iteration 18
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.27627
+  regularized dual is 8.27848
+  norm of gradient =0.0131952
+  norm of regularized gradient =0.0131971
+Iteration 19
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.25864
+  regularized dual is 8.26093
+  norm of gradient =0.0114259
+  norm of regularized gradient =0.0114266
+Iteration 20
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.18235
+  regularized dual is 8.18614
+  norm of gradient =0.0204136
+  norm of regularized gradient =0.0204159
+Iteration 21
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.15915
+  regularized dual is 8.16269
+  norm of gradient =0.0412968
+  norm of regularized gradient =0.0413003
+Iteration 22
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.12382
+  regularized dual is 8.12727
+  norm of gradient =0.026245
+  norm of regularized gradient =0.0262426
+Iteration 23
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.10067
+  regularized dual is 8.10426
+  norm of gradient =0.0107601
+  norm of regularized gradient =0.0107555
+Iteration 24
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.06926
+  regularized dual is 8.07324
+  norm of gradient =0.0240547
+  norm of regularized gradient =0.024054
+Iteration 25
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.01738
+  regularized dual is 8.02211
+  norm of gradient =0.0206227
+  norm of regularized gradient =0.0206216
+Iteration 26
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.9565
+  regularized dual is 7.96337
+  norm of gradient =0.0289784
+  norm of regularized gradient =0.0289799
+Iteration 27
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.92318
+  regularized dual is 7.93038
+  norm of gradient =0.0202202
+  norm of regularized gradient =0.0202167
+Iteration 28
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.90935
+  regularized dual is 7.91645
+  norm of gradient =0.0118272
+  norm of regularized gradient =0.0118214
+Iteration 29
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.88674
+  regularized dual is 7.89445
+  norm of gradient =0.0221804
+  norm of regularized gradient =0.0221804
+Iteration 30
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.86875
+  regularized dual is 7.87677
+  norm of gradient =0.0119431
+  norm of regularized gradient =0.0119409
+Iteration 31
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.8171
+  regularized dual is 7.82661
+  norm of gradient =0.0104931
+  norm of regularized gradient =0.0104854
+Iteration 32
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.75219
+  regularized dual is 7.76485
+  norm of gradient =0.0341285
+  norm of regularized gradient =0.0341287
+Iteration 33
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.69622
+  regularized dual is 7.71071
+  norm of gradient =0.0051374
+  norm of regularized gradient =0.00512422
+Iteration 34
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.63266
+  regularized dual is 7.65021
+  norm of gradient =0.00589922
+  norm of regularized gradient =0.00588744
+Iteration 35
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.58676
+  regularized dual is 7.60976
+  norm of gradient =0.0226898
+  norm of regularized gradient =0.0226864
+Iteration 36
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.54298
+  regularized dual is 7.56951
+  norm of gradient =0.0512426
+  norm of regularized gradient =0.0512427
+Iteration 37
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.5001
+  regularized dual is 7.52724
+  norm of gradient =0.0113141
+  norm of regularized gradient =0.011307
+Iteration 38
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.48285
+  regularized dual is 7.51112
+  norm of gradient =0.00980023
+  norm of regularized gradient =0.00979143
+Iteration 39
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.3647
+  regularized dual is 7.41908
+  norm of gradient =0.0531113
+  norm of regularized gradient =0.0531119
+Iteration 40
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.29927
+  regularized dual is 7.35125
+  norm of gradient =0.0261873
+  norm of regularized gradient =0.0261863
+Iteration 41
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.28057
+  regularized dual is 7.3305
+  norm of gradient =0.022929
+  norm of regularized gradient =0.0229223
+Iteration 42
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.25268
+  regularized dual is 7.30508
+  norm of gradient =0.015656
+  norm of regularized gradient =0.0156464
+Iteration 43
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.10326
+  regularized dual is 7.18051
+  norm of gradient =0.0305989
+  norm of regularized gradient =0.0305964
+Iteration 44
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.06983
+  regularized dual is 7.15076
+  norm of gradient =0.00600702
+  norm of regularized gradient =0.00598445
+Iteration 45
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.0046
+  regularized dual is 7.09633
+  norm of gradient =0.00994697
+  norm of regularized gradient =0.009929
+Iteration 46
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.83219
+  regularized dual is 6.95982
+  norm of gradient =0.0107557
+  norm of regularized gradient =0.0107352
+Iteration 47
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.4186
+  regularized dual is 10.5767
+  norm of gradient =0.71392
+  norm of regularized gradient =0.713924
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.43292
+  regularized dual is 7.57319
+  norm of gradient =0.292809
+  norm of regularized gradient =0.292812
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.89874
+  regularized dual is 7.03205
+  norm of gradient =0.081523
+  norm of regularized gradient =0.0815229
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.82691
+  regularized dual is 6.95722
+  norm of gradient =0.0306443
+  norm of regularized gradient =0.0306387
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.82121
+  regularized dual is 6.95013
+  norm of gradient =0.0159063
+  norm of regularized gradient =0.0158931
+Iteration 48
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.68074
+  regularized dual is 6.83975
+  norm of gradient =0.00850896
+  norm of regularized gradient =0.00848178
+Iteration 49
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.4454
+  regularized dual is 6.68216
+  norm of gradient =0.0308791
+  norm of regularized gradient =0.0308706
+Iteration 50
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.3751
+  regularized dual is 6.62699
+  norm of gradient =0.0128873
+  norm of regularized gradient =0.0128666
+Iteration 51
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.36305
+  regularized dual is 6.61688
+  norm of gradient =0.00610856
+  norm of regularized gradient =0.00606169
+Iteration 52
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.32572
+  regularized dual is 6.59091
+  norm of gradient =0.00483752
+  norm of regularized gradient =0.00477695
+Iteration 53
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.23164
+  regularized dual is 6.53932
+  norm of gradient =0.036248
+  norm of regularized gradient =0.0362382
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.27143
+  regularized dual is 6.55706
+  norm of gradient =0.0201523
+  norm of regularized gradient =0.0201356
+Iteration 54
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.22448
+  regularized dual is 6.52515
+  norm of gradient =0.0106385
+  norm of regularized gradient =0.0106073
+Iteration 55
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.12181
+  regularized dual is 6.46191
+  norm of gradient =0.00514419
+  norm of regularized gradient =0.00508008
+Iteration 56
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.06201
+  regularized dual is 6.42748
+  norm of gradient =0.00355707
+  norm of regularized gradient =0.00345906
+Iteration 57
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01586
+  regularized dual is 6.40229
+  norm of gradient =0.00516741
+  norm of regularized gradient =0.00509524
+Iteration 58
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00047
+  regularized dual is 6.39414
+  norm of gradient =0.00617807
+  norm of regularized gradient =0.00611883
+Iteration 59
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00248
+  regularized dual is 6.39472
+  norm of gradient =0.00155056
+  norm of regularized gradient =0.00129208
+Iteration 60
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00447
+  regularized dual is 6.39565
+  norm of gradient =0.00124626
+  norm of regularized gradient =0.000906007
+Iteration 61
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01074
+  regularized dual is 6.39856
+  norm of gradient =0.00124581
+  norm of regularized gradient =0.000907332
+Iteration 62
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01292
+  regularized dual is 6.39961
+  norm of gradient =0.00484363
+  norm of regularized gradient =0.00476872
+Iteration 63
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.0137
+  regularized dual is 6.39965
+  norm of gradient =0.001713
+  norm of regularized gradient =0.00148423
+Iteration 64
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01396
+  regularized dual is 6.39969
+  norm of gradient =0.00157973
+  norm of regularized gradient =0.00132648
+Iteration 65
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01383
+  regularized dual is 6.39947
+  norm of gradient =0.00148616
+  norm of regularized gradient =0.00121589
+Iteration 66
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01257
+  regularized dual is 6.39847
+  norm of gradient =0.00148802
+  norm of regularized gradient =0.00121799
+Iteration 67
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.027
+  regularized dual is 6.41059
+  norm of gradient =0.0305598
+  norm of regularized gradient =0.0305496
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01654
+  regularized dual is 6.40125
+  norm of gradient =0.0141401
+  norm of regularized gradient =0.0141157
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01375
+  regularized dual is 6.39905
+  norm of gradient =0.00670668
+  norm of regularized gradient =0.00665337
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01296
+  regularized dual is 6.39856
+  norm of gradient =0.0032701
+  norm of regularized gradient =0.00315775
+Iteration 68
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01231
+  regularized dual is 6.39774
+  norm of gradient =0.00140414
+  norm of regularized gradient =0.00111509
+Iteration 69
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01173
+  regularized dual is 6.39706
+  norm of gradient =0.0011558
+  norm of regularized gradient =0.000778808
+Iteration 70
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01322
+  regularized dual is 6.39811
+  norm of gradient =0.00950434
+  norm of regularized gradient =0.00946593
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01192
+  regularized dual is 6.39702
+  norm of gradient =0.00457021
+  norm of regularized gradient =0.00448955
+Iteration 71
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01131
+  regularized dual is 6.39638
+  norm of gradient =0.00149039
+  norm of regularized gradient =0.00122139
+Iteration 72
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.0111
+  regularized dual is 6.39604
+  norm of gradient =0.00116407
+  norm of regularized gradient =0.000791194
+Iteration 73
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00975
+  regularized dual is 6.39507
+  norm of gradient =0.00119318
+  norm of regularized gradient =0.000833762
+Iteration 74
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01402
+  regularized dual is 6.40035
+  norm of gradient =0.0180151
+  norm of regularized gradient =0.0179923
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.01
+  regularized dual is 6.39581
+  norm of gradient =0.00951984
+  norm of regularized gradient =0.00947879
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00936
+  regularized dual is 6.39492
+  norm of gradient =0.00479739
+  norm of regularized gradient =0.00471795
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00942
+  regularized dual is 6.39486
+  norm of gradient =0.00239836
+  norm of regularized gradient =0.00223817
+Iteration 75
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00856
+  regularized dual is 6.39415
+  norm of gradient =0.00121842
+  norm of regularized gradient =0.000865683
+Iteration 76
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00778
+  regularized dual is 6.3935
+  norm of gradient =0.00110152
+  norm of regularized gradient =0.000692948
+Iteration 77
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00655
+  regularized dual is 6.39265
+  norm of gradient =0.00309429
+  norm of regularized gradient =0.00297348
+Iteration 78
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00624
+  regularized dual is 6.39229
+  norm of gradient =0.00247842
+  norm of regularized gradient =0.0023242
+Iteration 79
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.006
+  regularized dual is 6.39207
+  norm of gradient =0.00114175
+  norm of regularized gradient =0.000753706
+Iteration 80
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.0056
+  regularized dual is 6.39176
+  norm of gradient =0.00123378
+  norm of regularized gradient =0.000888174
+Iteration 81
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00454
+  regularized dual is 6.39097
+  norm of gradient =0.00119203
+  norm of regularized gradient =0.000829512
+Iteration 82
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.0043
+  regularized dual is 6.39097
+  norm of gradient =0.00413958
+  norm of regularized gradient =0.00404717
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00414
+  regularized dual is 6.39069
+  norm of gradient =0.00219535
+  norm of regularized gradient =0.00201845
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00427
+  regularized dual is 6.39076
+  norm of gradient =0.00138505
+  norm of regularized gradient =0.00108583
+Iteration 83
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.00381
+  regularized dual is 6.3904
+  norm of gradient =0.00112841
+  norm of regularized gradient =0.000733365
+Iteration 84
+OWL-BFGS terminated with the stopping criterion
+Duration: 5 seconds
+-------------------
+Maxent 3grams
+-------------------
+Starting fitting...
+Starting OWL-BFGS with c1=9.23438e-07, sigma2=3.24873e+06, max_iters=1000
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 11.1916
+  regularized dual is 11.1916
+  norm of gradient =0.0791542
+  norm of regularized gradient =0.0791542
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 11.1125
+  regularized dual is 11.1125
+  norm of gradient =0.0791365
+  norm of regularized gradient =0.0791361
+Iteration 1
+  No of NaNs in logZs: 0, No infs: 330848
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0320496
+  norm of regularized gradient =0.0314183
+  No of NaNs in logZs: 0, No infs: 330848
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0545462
+  norm of regularized gradient =0.0540059
+  No of NaNs in logZs: 0, No infs: 4578
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0751752
+  norm of regularized gradient =0.0749793
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 310.147
+  regularized dual is 310.197
+  norm of gradient =0.945533
+  norm of regularized gradient =0.945634
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 155.397
+  regularized dual is 155.41
+  norm of gradient =0.945533
+  norm of regularized gradient =0.945583
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 78.0222
+  regularized dual is 78.0253
+  norm of gradient =0.945533
+  norm of regularized gradient =0.945558
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 39.3347
+  regularized dual is 39.3355
+  norm of gradient =0.945533
+  norm of regularized gradient =0.945545
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 19.991
+  regularized dual is 19.9912
+  norm of gradient =0.945513
+  norm of regularized gradient =0.945519
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.7629
+  regularized dual is 10.763
+  norm of gradient =0.587461
+  norm of regularized gradient =0.587464
+Iteration 2
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 40.8121
+  regularized dual is 40.8157
+  norm of gradient =0.635115
+  norm of regularized gradient =0.635135
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 22.7542
+  regularized dual is 22.7552
+  norm of gradient =0.593468
+  norm of regularized gradient =0.593479
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 13.8076
+  regularized dual is 13.8079
+  norm of gradient =0.559274
+  norm of regularized gradient =0.559281
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.0694
+  regularized dual is 10.0695
+  norm of gradient =0.277549
+  norm of regularized gradient =0.277554
+Iteration 3
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.2043
+  regularized dual is 10.2044
+  norm of gradient =0.0760762
+  norm of regularized gradient =0.076075
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.66111
+  regularized dual is 9.66122
+  norm of gradient =0.0715228
+  norm of regularized gradient =0.0715194
+Iteration 4
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.48197
+  regularized dual is 9.48211
+  norm of gradient =0.0639032
+  norm of regularized gradient =0.0638995
+Iteration 5
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 13.5048
+  regularized dual is 13.5053
+  norm of gradient =0.642216
+  norm of regularized gradient =0.642222
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.84518
+  regularized dual is 9.84546
+  norm of gradient =0.302503
+  norm of regularized gradient =0.302508
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.25814
+  regularized dual is 9.25835
+  norm of gradient =0.0397407
+  norm of regularized gradient =0.0397404
+Iteration 6
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.18849
+  regularized dual is 9.18873
+  norm of gradient =0.0284328
+  norm of regularized gradient =0.0284334
+Iteration 7
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.08758
+  regularized dual is 9.08786
+  norm of gradient =0.0255439
+  norm of regularized gradient =0.0255437
+Iteration 8
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.4672
+  regularized dual is 10.4681
+  norm of gradient =0.269298
+  norm of regularized gradient =0.269306
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.02261
+  regularized dual is 9.02314
+  norm of gradient =0.0828649
+  norm of regularized gradient =0.0828691
+Iteration 9
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.83529
+  regularized dual is 8.83577
+  norm of gradient =0.0158164
+  norm of regularized gradient =0.0158127
+Iteration 10
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.77103
+  regularized dual is 8.77158
+  norm of gradient =0.0134577
+  norm of regularized gradient =0.0134504
+Iteration 11
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.91241
+  regularized dual is 8.9136
+  norm of gradient =0.111338
+  norm of regularized gradient =0.111343
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.66091
+  regularized dual is 8.66173
+  norm of gradient =0.0436056
+  norm of regularized gradient =0.0436055
+Iteration 12
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.68944
+  regularized dual is 8.69047
+  norm of gradient =0.189153
+  norm of regularized gradient =0.189155
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.60196
+  regularized dual is 8.60288
+  norm of gradient =0.0431791
+  norm of regularized gradient =0.0431805
+Iteration 13
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.5579
+  regularized dual is 8.5589
+  norm of gradient =0.026891
+  norm of regularized gradient =0.0268919
+Iteration 14
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.46079
+  regularized dual is 8.4621
+  norm of gradient =0.0195044
+  norm of regularized gradient =0.0195062
+Iteration 15
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.39826
+  regularized dual is 8.39975
+  norm of gradient =0.0183633
+  norm of regularized gradient =0.0183623
+Iteration 16
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.3293
+  regularized dual is 8.33112
+  norm of gradient =0.0215542
+  norm of regularized gradient =0.0215502
+Iteration 17
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.25933
+  regularized dual is 8.26144
+  norm of gradient =0.0174131
+  norm of regularized gradient =0.0174087
+Iteration 18
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.15419
+  regularized dual is 8.15751
+  norm of gradient =0.0155236
+  norm of regularized gradient =0.0155236
+Iteration 19
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.18358
+  regularized dual is 8.18682
+  norm of gradient =0.0647643
+  norm of regularized gradient =0.0647655
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.14088
+  regularized dual is 8.14416
+  norm of gradient =0.026187
+  norm of regularized gradient =0.0261866
+Iteration 20
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.11729
+  regularized dual is 8.12052
+  norm of gradient =0.0116935
+  norm of regularized gradient =0.0116936
+Iteration 21
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.09381
+  regularized dual is 8.09726
+  norm of gradient =0.0106596
+  norm of regularized gradient =0.0106582
+Iteration 22
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.9985
+  regularized dual is 8.00367
+  norm of gradient =0.0143443
+  norm of regularized gradient =0.0143442
+Iteration 23
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.13245
+  regularized dual is 8.13804
+  norm of gradient =0.103919
+  norm of regularized gradient =0.103922
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.0024
+  regularized dual is 8.00776
+  norm of gradient =0.0355657
+  norm of regularized gradient =0.0355667
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.9844
+  regularized dual is 7.98967
+  norm of gradient =0.0154176
+  norm of regularized gradient =0.015417
+Iteration 24
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.97539
+  regularized dual is 7.98061
+  norm of gradient =0.0102437
+  norm of regularized gradient =0.0102428
+Iteration 25
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.95183
+  regularized dual is 7.95726
+  norm of gradient =0.00811066
+  norm of regularized gradient =0.00810982
+Iteration 26
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.92288
+  regularized dual is 7.92866
+  norm of gradient =0.00753465
+  norm of regularized gradient =0.00753112
+Iteration 27
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.01671
+  regularized dual is 8.02708
+  norm of gradient =0.189297
+  norm of regularized gradient =0.189299
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.85983
+  regularized dual is 7.86761
+  norm of gradient =0.0484587
+  norm of regularized gradient =0.0484582
+Iteration 28
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.76923
+  regularized dual is 7.77862
+  norm of gradient =0.00828823
+  norm of regularized gradient =0.00827946
+Iteration 29
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.72626
+  regularized dual is 7.73675
+  norm of gradient =0.00663228
+  norm of regularized gradient =0.00662017
+Iteration 30
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.76047
+  regularized dual is 7.7825
+  norm of gradient =0.133585
+  norm of regularized gradient =0.133587
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.62908
+  regularized dual is 7.64441
+  norm of gradient =0.0391784
+  norm of regularized gradient =0.0391784
+Iteration 31
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.55565
+  regularized dual is 7.57292
+  norm of gradient =0.0143158
+  norm of regularized gradient =0.0143099
+Iteration 32
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.51549
+  regularized dual is 7.53422
+  norm of gradient =0.0119965
+  norm of regularized gradient =0.0119887
+Iteration 33
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.32222
+  regularized dual is 7.35315
+  norm of gradient =0.0169388
+  norm of regularized gradient =0.0169339
+Iteration 34
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.55274
+  regularized dual is 7.59513
+  norm of gradient =0.108195
+  norm of regularized gradient =0.108197
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.34829
+  regularized dual is 7.38441
+  norm of gradient =0.0599656
+  norm of regularized gradient =0.0599638
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.29945
+  regularized dual is 7.33284
+  norm of gradient =0.0424966
+  norm of regularized gradient =0.0424928
+Iteration 35
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.23579
+  regularized dual is 7.27096
+  norm of gradient =0.0225808
+  norm of regularized gradient =0.0225739
+Iteration 36
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.12598
+  regularized dual is 7.17094
+  norm of gradient =0.0805899
+  norm of regularized gradient =0.0805901
+Iteration 37
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.0103
+  regularized dual is 7.0618
+  norm of gradient =0.0198587
+  norm of regularized gradient =0.0198526
+Iteration 38
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.76072
+  regularized dual is 6.83707
+  norm of gradient =0.0104306
+  norm of regularized gradient =0.0104091
+Iteration 39
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.47538
+  regularized dual is 6.58685
+  norm of gradient =0.00939831
+  norm of regularized gradient =0.00936758
+Iteration 40
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.77226
+  regularized dual is 10.0962
+  norm of gradient =0.904231
+  norm of regularized gradient =0.904234
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.84296
+  regularized dual is 7.042
+  norm of gradient =0.468557
+  norm of regularized gradient =0.468559
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.36914
+  regularized dual is 6.51969
+  norm of gradient =0.122633
+  norm of regularized gradient =0.122632
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.37641
+  regularized dual is 6.50624
+  norm of gradient =0.0405157
+  norm of regularized gradient =0.0405094
+Iteration 41
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 5.91094
+  regularized dual is 6.12266
+  norm of gradient =0.0122349
+  norm of regularized gradient =0.0122016
+Iteration 42
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 5.5807
+  regularized dual is 5.86188
+  norm of gradient =0.0120383
+  norm of regularized gradient =0.0120001
+Iteration 43
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.92449
+  regularized dual is 5.3974
+  norm of gradient =0.0156593
+  norm of regularized gradient =0.0156238
+Iteration 44
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.76407
+  regularized dual is 5.2929
+  norm of gradient =0.037333
+  norm of regularized gradient =0.037317
+Iteration 45
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.69507
+  regularized dual is 5.2436
+  norm of gradient =0.0296279
+  norm of regularized gradient =0.0296043
+Iteration 46
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.67981
+  regularized dual is 5.2271
+  norm of gradient =0.01911
+  norm of regularized gradient =0.0190741
+Iteration 47
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.61513
+  regularized dual is 5.18287
+  norm of gradient =0.0128305
+  norm of regularized gradient =0.0127822
+Iteration 48
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.57263
+  regularized dual is 5.15248
+  norm of gradient =0.00518539
+  norm of regularized gradient =0.00505792
+Iteration 49
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.42524
+  regularized dual is 5.05887
+  norm of gradient =0.00555995
+  norm of regularized gradient =0.00543237
+Iteration 50
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.22243
+  regularized dual is 4.93907
+  norm of gradient =0.00548328
+  norm of regularized gradient =0.00534561
+Iteration 51
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.31097
+  regularized dual is 5.14168
+  norm of gradient =0.228198
+  norm of regularized gradient =0.228197
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.1491
+  regularized dual is 4.92031
+  norm of gradient =0.0513228
+  norm of regularized gradient =0.05131
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.16853
+  regularized dual is 4.91183
+  norm of gradient =0.017301
+  norm of regularized gradient =0.0172588
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.19195
+  regularized dual is 4.92176
+  norm of gradient =0.00660905
+  norm of regularized gradient =0.00649557
+Iteration 52
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.10674
+  regularized dual is 4.87444
+  norm of gradient =0.00235146
+  norm of regularized gradient =0.0020031
+Iteration 53
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.05797
+  regularized dual is 4.8487
+  norm of gradient =0.00426388
+  norm of regularized gradient =0.00407959
+Iteration 54
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.02577
+  regularized dual is 4.83284
+  norm of gradient =0.0114483
+  norm of regularized gradient =0.0113819
+Iteration 55
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.03206
+  regularized dual is 4.83536
+  norm of gradient =0.00208858
+  norm of regularized gradient =0.0016772
+Iteration 56
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.03888
+  regularized dual is 4.8388
+  norm of gradient =0.00173798
+  norm of regularized gradient =0.00121093
+Iteration 57
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.04931
+  regularized dual is 4.84411
+  norm of gradient =0.00167891
+  norm of regularized gradient =0.00112472
+Iteration 58
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.05707
+  regularized dual is 4.84804
+  norm of gradient =0.00220508
+  norm of regularized gradient =0.00181964
+Iteration 59
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.05862
+  regularized dual is 4.84863
+  norm of gradient =0.00215858
+  norm of regularized gradient =0.00176329
+Iteration 60
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06016
+  regularized dual is 4.84911
+  norm of gradient =0.00213443
+  norm of regularized gradient =0.00173329
+Iteration 61
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.07563
+  regularized dual is 4.85717
+  norm of gradient =0.0101404
+  norm of regularized gradient =0.0100647
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06709
+  regularized dual is 4.85226
+  norm of gradient =0.00468296
+  norm of regularized gradient =0.00451524
+Iteration 62
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06871
+  regularized dual is 4.85252
+  norm of gradient =0.00161471
+  norm of regularized gradient =0.00102735
+Iteration 63
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.07065
+  regularized dual is 4.85324
+  norm of gradient =0.00177524
+  norm of regularized gradient =0.00126291
+Iteration 64
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.07046
+  regularized dual is 4.85287
+  norm of gradient =0.00606782
+  norm of regularized gradient =0.00593977
+Iteration 65
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06913
+  regularized dual is 4.85179
+  norm of gradient =0.00181369
+  norm of regularized gradient =0.00131499
+Iteration 66
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.0676
+  regularized dual is 4.85076
+  norm of gradient =0.00169555
+  norm of regularized gradient =0.00114677
+Iteration 67
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06469
+  regularized dual is 4.84953
+  norm of gradient =0.00579645
+  norm of regularized gradient =0.00565952
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06553
+  regularized dual is 4.84947
+  norm of gradient =0.00298845
+  norm of regularized gradient =0.00271383
+Iteration 68
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06399
+  regularized dual is 4.84824
+  norm of gradient =0.0020652
+  norm of regularized gradient =0.00164449
+Iteration 69
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06308
+  regularized dual is 4.84751
+  norm of gradient =0.00159338
+  norm of regularized gradient =0.00098741
+Iteration 70
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06144
+  regularized dual is 4.84629
+  norm of gradient =0.00159654
+  norm of regularized gradient =0.000992652
+Iteration 71
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06134
+  regularized dual is 4.84628
+  norm of gradient =0.00533494
+  norm of regularized gradient =0.00518575
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06107
+  regularized dual is 4.84596
+  norm of gradient =0.00283561
+  norm of regularized gradient =0.00254423
+Iteration 72
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06076
+  regularized dual is 4.84558
+  norm of gradient =0.00171485
+  norm of regularized gradient =0.00117128
+Iteration 73
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06044
+  regularized dual is 4.84517
+  norm of gradient =0.00159741
+  norm of regularized gradient =0.000991788
+Iteration 74
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.0604
+  regularized dual is 4.84494
+  norm of gradient =0.00323123
+  norm of regularized gradient =0.00297695
+Iteration 75
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06044
+  regularized dual is 4.84473
+  norm of gradient =0.0015445
+  norm of regularized gradient =0.000902959
+Iteration 76
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.0606
+  regularized dual is 4.84471
+  norm of gradient =0.00157419
+  norm of regularized gradient =0.000953798
+Iteration 77
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06087
+  regularized dual is 4.84478
+  norm of gradient =0.00157379
+  norm of regularized gradient =0.000952719
+Iteration 78
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06097
+  regularized dual is 4.84484
+  norm of gradient =0.00298094
+  norm of regularized gradient =0.00270413
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06081
+  regularized dual is 4.84469
+  norm of gradient =0.0019038
+  norm of regularized gradient =0.00143272
+Iteration 79
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06068
+  regularized dual is 4.84457
+  norm of gradient =0.00157306
+  norm of regularized gradient =0.00095097
+Iteration 80
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.06047
+  regularized dual is 4.84442
+  norm of gradient =0.0015293
+  norm of regularized gradient =0.000877506
+Iteration 81
+OWL-BFGS resulted in convergence
+Duration: 12 seconds
+-------------------
+Maxent 4grams
+-------------------
+Starting fitting...
+Starting OWL-BFGS with c1=9.23438e-07, sigma2=3.24873e+06, max_iters=1000
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 11.1916
+  regularized dual is 11.1916
+  norm of gradient =0.079165
+  norm of regularized gradient =0.079165
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 11.1125
+  regularized dual is 11.1125
+  norm of gradient =0.0791472
+  norm of regularized gradient =0.0791469
+Iteration 1
+  No of NaNs in logZs: 0, No infs: 453264
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0320714
+  norm of regularized gradient =0.0314396
+  No of NaNs in logZs: 0, No infs: 453264
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0545608
+  norm of regularized gradient =0.0540203
+  No of NaNs in logZs: 0, No infs: 11257
+  dual is inf
+  regularized dual is inf
+  norm of gradient =0.0751454
+  norm of regularized gradient =0.0749493
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 310.162
+  regularized dual is 310.211
+  norm of gradient =0.945534
+  norm of regularized gradient =0.945634
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 155.405
+  regularized dual is 155.417
+  norm of gradient =0.945534
+  norm of regularized gradient =0.945584
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 78.0259
+  regularized dual is 78.029
+  norm of gradient =0.945534
+  norm of regularized gradient =0.945559
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 39.3365
+  regularized dual is 39.3373
+  norm of gradient =0.945534
+  norm of regularized gradient =0.945546
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 19.9919
+  regularized dual is 19.9921
+  norm of gradient =0.945514
+  norm of regularized gradient =0.94552
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.763
+  regularized dual is 10.7631
+  norm of gradient =0.587673
+  norm of regularized gradient =0.587676
+Iteration 2
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 40.8245
+  regularized dual is 40.8281
+  norm of gradient =0.635164
+  norm of regularized gradient =0.635183
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 22.7602
+  regularized dual is 22.7612
+  norm of gradient =0.593496
+  norm of regularized gradient =0.593507
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 13.8104
+  regularized dual is 13.8108
+  norm of gradient =0.559324
+  norm of regularized gradient =0.55933
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.0692
+  regularized dual is 10.0694
+  norm of gradient =0.277857
+  norm of regularized gradient =0.277863
+Iteration 3
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.2029
+  regularized dual is 10.203
+  norm of gradient =0.0761178
+  norm of regularized gradient =0.0761166
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.65952
+  regularized dual is 9.65963
+  norm of gradient =0.0715658
+  norm of regularized gradient =0.0715623
+Iteration 4
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.48043
+  regularized dual is 9.48058
+  norm of gradient =0.0639528
+  norm of regularized gradient =0.0639491
+Iteration 5
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 13.5104
+  regularized dual is 13.5109
+  norm of gradient =0.641402
+  norm of regularized gradient =0.641408
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.84593
+  regularized dual is 9.84621
+  norm of gradient =0.303271
+  norm of regularized gradient =0.303276
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.25628
+  regularized dual is 9.25648
+  norm of gradient =0.0399294
+  norm of regularized gradient =0.0399291
+Iteration 6
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.18643
+  regularized dual is 9.18667
+  norm of gradient =0.0285568
+  norm of regularized gradient =0.0285575
+Iteration 7
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.0851
+  regularized dual is 9.08538
+  norm of gradient =0.0256241
+  norm of regularized gradient =0.0256239
+Iteration 8
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 10.4691
+  regularized dual is 10.47
+  norm of gradient =0.270018
+  norm of regularized gradient =0.270026
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 9.01907
+  regularized dual is 9.0196
+  norm of gradient =0.083184
+  norm of regularized gradient =0.0831881
+Iteration 9
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.83079
+  regularized dual is 8.83127
+  norm of gradient =0.0158938
+  norm of regularized gradient =0.01589
+Iteration 10
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.76594
+  regularized dual is 8.76648
+  norm of gradient =0.0135511
+  norm of regularized gradient =0.0135436
+Iteration 11
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.91575
+  regularized dual is 8.91695
+  norm of gradient =0.112277
+  norm of regularized gradient =0.112282
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.656
+  regularized dual is 8.65682
+  norm of gradient =0.0446877
+  norm of regularized gradient =0.0446877
+Iteration 12
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.6741
+  regularized dual is 8.67514
+  norm of gradient =0.180731
+  norm of regularized gradient =0.180733
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.59455
+  regularized dual is 8.59548
+  norm of gradient =0.0402447
+  norm of regularized gradient =0.0402461
+Iteration 13
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.55021
+  regularized dual is 8.55121
+  norm of gradient =0.0272422
+  norm of regularized gradient =0.0272432
+Iteration 14
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.44552
+  regularized dual is 8.44688
+  norm of gradient =0.0203877
+  norm of regularized gradient =0.0203899
+Iteration 15
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.38903
+  regularized dual is 8.39054
+  norm of gradient =0.025615
+  norm of regularized gradient =0.025614
+Iteration 16
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.32946
+  regularized dual is 8.3312
+  norm of gradient =0.0177724
+  norm of regularized gradient =0.0177675
+Iteration 17
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.26001
+  regularized dual is 8.26205
+  norm of gradient =0.0153339
+  norm of regularized gradient =0.0153278
+Iteration 18
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.18484
+  regularized dual is 8.18832
+  norm of gradient =0.0486059
+  norm of regularized gradient =0.0486077
+Iteration 19
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.13061
+  regularized dual is 8.13403
+  norm of gradient =0.017691
+  norm of regularized gradient =0.0176915
+Iteration 20
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.09275
+  regularized dual is 8.09602
+  norm of gradient =0.0148655
+  norm of regularized gradient =0.0148623
+Iteration 21
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 8.0574
+  regularized dual is 8.06094
+  norm of gradient =0.0394099
+  norm of regularized gradient =0.0394059
+Iteration 22
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.9917
+  regularized dual is 7.99571
+  norm of gradient =0.0119286
+  norm of regularized gradient =0.0119188
+Iteration 23
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.93089
+  regularized dual is 7.93583
+  norm of gradient =0.035162
+  norm of regularized gradient =0.0351606
+Iteration 24
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.8415
+  regularized dual is 7.84793
+  norm of gradient =0.0134628
+  norm of regularized gradient =0.0134564
+Iteration 25
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.75174
+  regularized dual is 7.76009
+  norm of gradient =0.00729609
+  norm of regularized gradient =0.00728213
+Iteration 26
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.6527
+  regularized dual is 7.66503
+  norm of gradient =0.0560626
+  norm of regularized gradient =0.0560622
+Iteration 27
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.56107
+  regularized dual is 7.57527
+  norm of gradient =0.0152046
+  norm of regularized gradient =0.0151971
+Iteration 28
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.5032
+  regularized dual is 7.51891
+  norm of gradient =0.00893275
+  norm of regularized gradient =0.00891978
+Iteration 29
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.25232
+  regularized dual is 7.28169
+  norm of gradient =0.0180115
+  norm of regularized gradient =0.0180063
+Iteration 30
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.26164
+  regularized dual is 7.29224
+  norm of gradient =0.0510674
+  norm of regularized gradient =0.0510642
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.23088
+  regularized dual is 7.26081
+  norm of gradient =0.0286518
+  norm of regularized gradient =0.0286458
+Iteration 31
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.20389
+  regularized dual is 7.23446
+  norm of gradient =0.0137883
+  norm of regularized gradient =0.0137775
+Iteration 32
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.13354
+  regularized dual is 7.16746
+  norm of gradient =0.0313836
+  norm of regularized gradient =0.031381
+Iteration 33
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.02013
+  regularized dual is 7.06017
+  norm of gradient =0.0277931
+  norm of regularized gradient =0.027789
+Iteration 34
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.46337
+  regularized dual is 6.57725
+  norm of gradient =0.0270983
+  norm of regularized gradient =0.0270947
+Iteration 35
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.6142
+  regularized dual is 7.7237
+  norm of gradient =0.45828
+  norm of regularized gradient =0.458283
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.52513
+  regularized dual is 6.63672
+  norm of gradient =0.105993
+  norm of regularized gradient =0.105994
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.4243
+  regularized dual is 6.53701
+  norm of gradient =0.0325034
+  norm of regularized gradient =0.0324996
+Iteration 36
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.30761
+  regularized dual is 6.41331
+  norm of gradient =0.0162336
+  norm of regularized gradient =0.0162163
+Iteration 37
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 6.11414
+  regularized dual is 6.23578
+  norm of gradient =0.0155494
+  norm of regularized gradient =0.0155259
+Iteration 38
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 5.52312
+  regularized dual is 5.72953
+  norm of gradient =0.0133005
+  norm of regularized gradient =0.0132648
+Iteration 39
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 7.76324
+  regularized dual is 8.19992
+  norm of gradient =0.8642
+  norm of regularized gradient =0.864202
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 5.57005
+  regularized dual is 5.87759
+  norm of gradient =0.308503
+  norm of regularized gradient =0.308504
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 5.36235
+  regularized dual is 5.61583
+  norm of gradient =0.0833817
+  norm of regularized gradient =0.0833758
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 5.40495
+  regularized dual is 5.63401
+  norm of gradient =0.0398681
+  norm of regularized gradient =0.0398543
+Iteration 40
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 4.79605
+  regularized dual is 5.14323
+  norm of gradient =0.0233562
+  norm of regularized gradient =0.0233294
+Iteration 41
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 3.98825
+  regularized dual is 4.54428
+  norm of gradient =0.0154923
+  norm of regularized gradient =0.0154449
+Iteration 42
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 3.59725
+  regularized dual is 4.27503
+  norm of gradient =0.0343476
+  norm of regularized gradient =0.0343226
+Iteration 43
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 3.3585
+  regularized dual is 4.1097
+  norm of gradient =0.0125449
+  norm of regularized gradient =0.0124713
+Iteration 44
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 3.14182
+  regularized dual is 3.96813
+  norm of gradient =0.0130798
+  norm of regularized gradient =0.0130077
+Iteration 45
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.94314
+  regularized dual is 3.84851
+  norm of gradient =0.00654028
+  norm of regularized gradient =0.00638382
+Iteration 46
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.89958
+  regularized dual is 3.82366
+  norm of gradient =0.00799791
+  norm of regularized gradient =0.00787035
+Iteration 47
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.85037
+  regularized dual is 3.79571
+  norm of gradient =0.00322659
+  norm of regularized gradient =0.00289139
+Iteration 48
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.8004
+  regularized dual is 3.76818
+  norm of gradient =0.0030329
+  norm of regularized gradient =0.00266911
+Iteration 49
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77486
+  regularized dual is 3.75415
+  norm of gradient =0.00369211
+  norm of regularized gradient =0.00339858
+Iteration 50
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.7495
+  regularized dual is 3.74165
+  norm of gradient =0.00773992
+  norm of regularized gradient =0.00760509
+Iteration 51
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.7516
+  regularized dual is 3.74181
+  norm of gradient =0.00234249
+  norm of regularized gradient =0.00184443
+Iteration 52
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.75417
+  regularized dual is 3.74306
+  norm of gradient =0.00195015
+  norm of regularized gradient =0.00130866
+Iteration 53
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.75997
+  regularized dual is 3.74602
+  norm of gradient =0.00232223
+  norm of regularized gradient =0.00181909
+Iteration 54
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76474
+  regularized dual is 3.74858
+  norm of gradient =0.0051188
+  norm of regularized gradient =0.00490862
+Iteration 55
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76407
+  regularized dual is 3.74787
+  norm of gradient =0.00198538
+  norm of regularized gradient =0.00135884
+Iteration 56
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76368
+  regularized dual is 3.74709
+  norm of gradient =0.00327966
+  norm of regularized gradient =0.00294457
+Iteration 57
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.764
+  regularized dual is 3.74653
+  norm of gradient =0.00302689
+  norm of regularized gradient =0.00266001
+Iteration 58
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.78986
+  regularized dual is 3.76285
+  norm of gradient =0.0143622
+  norm of regularized gradient =0.0142895
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77452
+  regularized dual is 3.75207
+  norm of gradient =0.00768473
+  norm of regularized gradient =0.00754748
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76863
+  regularized dual is 3.74861
+  norm of gradient =0.00456521
+  norm of regularized gradient =0.00433022
+Iteration 59
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76955
+  regularized dual is 3.74816
+  norm of gradient =0.00216925
+  norm of regularized gradient =0.00161312
+Iteration 60
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77232
+  regularized dual is 3.74914
+  norm of gradient =0.00198615
+  norm of regularized gradient =0.0013572
+Iteration 61
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77483
+  regularized dual is 3.75026
+  norm of gradient =0.0051855
+  norm of regularized gradient =0.00497671
+Iteration 62
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77387
+  regularized dual is 3.74926
+  norm of gradient =0.00200053
+  norm of regularized gradient =0.00137415
+Iteration 63
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77316
+  regularized dual is 3.74878
+  norm of gradient =0.00210927
+  norm of regularized gradient =0.00153049
+Iteration 64
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.77135
+  regularized dual is 3.74758
+  norm of gradient =0.00199521
+  norm of regularized gradient =0.00136876
+Iteration 65
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76636
+  regularized dual is 3.74454
+  norm of gradient =0.00237563
+  norm of regularized gradient =0.00187941
+Iteration 66
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76543
+  regularized dual is 3.74401
+  norm of gradient =0.00418184
+  norm of regularized gradient =0.0039209
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76571
+  regularized dual is 3.74409
+  norm of gradient =0.00219226
+  norm of regularized gradient =0.00164089
+Iteration 67
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76519
+  regularized dual is 3.74374
+  norm of gradient =0.00200031
+  norm of regularized gradient =0.00137434
+Iteration 68
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76267
+  regularized dual is 3.74208
+  norm of gradient =0.00207689
+  norm of regularized gradient =0.00148613
+Iteration 69
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76204
+  regularized dual is 3.74165
+  norm of gradient =0.00326079
+  norm of regularized gradient =0.00291917
+Iteration 70
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76156
+  regularized dual is 3.74126
+  norm of gradient =0.0022023
+  norm of regularized gradient =0.0016562
+Iteration 71
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76114
+  regularized dual is 3.74079
+  norm of gradient =0.00217528
+  norm of regularized gradient =0.00162108
+Iteration 72
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76098
+  regularized dual is 3.74055
+  norm of gradient =0.00195829
+  norm of regularized gradient =0.00131446
+Iteration 73
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76151
+  regularized dual is 3.7406
+  norm of gradient =0.00217919
+  norm of regularized gradient =0.00162668
+Iteration 74
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.7615
+  regularized dual is 3.74057
+  norm of gradient =0.0028944
+  norm of regularized gradient =0.00250302
+Iteration 75
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.76143
+  regularized dual is 3.74048
+  norm of gradient =0.00191198
+  norm of regularized gradient =0.00124404
+Iteration 76
+  No of NaNs in logZs: 0, No infs: 0
+  dual is 2.7614
+  regularized dual is 3.74044
+  norm of gradient =0.00182543
+  norm of regularized gradient =0.00110719
+Iteration 77
+OWL-BFGS terminated with the stopping criterion
+Duration: 21 seconds
+--------------------
+Computing perplexity
+--------------------
+data/srilm/3gram.kn012.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197449.1  ppl=  1854.673  ppl1=  2928.428
+data/srilm/4gram.kn0122.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197482.2  ppl=  1857.016  ppl1=  2932.353
+data/srilm/4gram.kn0123.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197540.3  ppl=  1861.13   ppl1=  2939.243
+data/srilm/3gram.kn011.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197540.6  ppl=  1861.155  ppl1=  2939.284
+data/srilm/4gram.kn0112.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197655.9  ppl=  1869.346  ppl1=  2953.007
+data/srilm/4gram.kn0113.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197714.5  ppl=  1873.528  ppl1=  2960.016
+data/srilm/4gram.kn0111.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -197970.8  ppl=  1891.922  ppl1=  2990.849
+data/srilm/3gram.kn022.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -200347.9  ppl=  2071.334  ppl1=  3292.53
+data/srilm/4gram.kn0222.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -200395.2  ppl=  2075.069  ppl1=  3298.826
+data/srilm/4gram.kn0223.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -200462.4  ppl=  2080.391  ppl1=  3307.802
+data/srilm/3gram.me.gz      file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -200676.5  ppl=  2097.437  ppl1=  3336.557
+data/srilm/4gram.me.gz      file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -200803    ppl=  2107.575  ppl1=  3353.665
+data/srilm/3gram.kn023.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -200843.3  ppl=  2110.815  ppl1=  3359.135
+data/srilm/4gram.gt0123.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218149.3  ppl=  4082.318  ppl1=  6761.927
+data/srilm/3gram.gt012.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218152.8  ppl=  4082.86   ppl1=  6762.879
+data/srilm/4gram.gt0122.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218156.6  ppl=  4083.457  ppl1=  6763.929
+data/srilm/4gram.gt0113.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218300.4  ppl=  4105.891  ppl1=  6803.351
+data/srilm/3gram.gt011.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218303.9  ppl=  4106.436  ppl1=  6804.309
+data/srilm/4gram.gt0112.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218307.7  ppl=  4107.038  ppl1=  6805.366
+data/srilm/4gram.gt0111.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -218641.3  ppl=  4159.586  ppl1=  6897.76
+data/srilm/4gram.gt0223.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -220764.5  ppl=  4510.178  ppl1=  7515.963
+data/srilm/3gram.gt022.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -220767.9  ppl=  4510.776  ppl1=  7517.021
+data/srilm/4gram.gt0222.gz  file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -220771.8  ppl=  4511.437  ppl1=  7518.188
+data/srilm/3gram.gt023.gz   file  data/srilm/dev.txt:  3457  sentences,  56957  words,  0  OOVs  0  zeroprobs,  logprob=  -220984.2  ppl=  4548.105  ppl1=  7583.019
+The perlexity scores report is stored in data/srilm/perplexities.txt
+
+---------------------------------------------------------------------
+Creating G.fst on  Wed Jun 10 23:35:42 UTC 2020
+---------------------------------------------------------------------
+
+local/arpa2G.sh data/srilm/lm.gz data/lang data/lang
+arpa2fst -
+LOG (arpa2fst[5.5.697~1-79790]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.697~1-79790]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+LOG (arpa2fst[5.5.697~1-79790]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+LOG (arpa2fst[5.5.697~1-79790]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+fstisstochastic data/lang/G.fst
+4.21331e-07 -3.09137
+
+---------------------------------------------------------------------
+Making feature extraction on  Wed Jun 10 23:35:45 UTC 2020
+---------------------------------------------------------------------
+
+utils/validate_data_dir.sh: file data/train/utt2spk is not in sorted order or has duplicates
+utils/validate_data_dir.sh: file data/test/utt2spk is not in sorted order or has duplicates
+utils/fix_data_dir.sh: file data/train/utt2spk is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/spk2utt is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/text is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/wav.scp is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/train/spk2gender is not in sorted order or not unique, sorting it
+fix_data_dir.sh: kept all 34574 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+utils/fix_data_dir.sh: file data/test/utt2spk is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/spk2utt is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/text is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/wav.scp is not in sorted order or not unique, sorting it
+utils/fix_data_dir.sh: file data/test/spk2gender is not in sorted order or not unique, sorting it
+fix_data_dir.sh: kept all 390 utterances.
+fix_data_dir.sh: old files are kept in data/test/.backup
+steps/make_mfcc.sh --nj 6 --cmd run.pl data/train exp/make_mfcc/train mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+steps/make_mfcc.sh --nj 6 --cmd run.pl data/test exp/make_mfcc/test mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh: [info]: no segments file exists: assuming wav.scp indexed by utterance.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test mfcc
+Succeeded creating CMVN stats for test
+
+---------------------------------------------------------------------
+Starting (small) monophone training in exp/mono on  Wed Jun 10 23:36:57 UTC 2020
+---------------------------------------------------------------------
+
+steps/train_mono.sh --nj 6 --cmd run.pl data/train data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+271 warnings in exp/mono/log/update.*.log
+59602 warnings in exp/mono/log/align.*.*.log
+16299 warnings in exp/mono/log/acc.*.*.log
+exp/mono: nj=6 align prob=-99.52 over 83.08h [retry=3.8%, fail=1.2%] states=242 gauss=995
+steps/train_mono.sh: Done training monophone system in exp/mono
+
+---------------------------------------------------------------------
+Starting (small) triphone training in exp/tri1 on Thu Jun 11 00:27:05 UTC 2020
+---------------------------------------------------------------------
+
+steps/align_si.sh --nj 6 --cmd run.pl data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/mono_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_deltas.sh --cmd run.pl 2000 25000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+19105 warnings in exp/tri1/log/acc.*.*.log
+6496 warnings in exp/tri1/log/align.*.*.log
+3 warnings in exp/tri1/log/init_model.log
+1 warnings in exp/tri1/log/build_tree.log
+exp/tri1: nj=6 align prob=-95.77 over 82.52h [retry=4.6%, fail=1.9%] states=1624 gauss=25073 tree-impr=4.76
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+
+---------------------------------------------------------------------
+Starting (medium) triphone training in exp/tri2 on Thu Jun 11 00:45:22 UTC 2020
+---------------------------------------------------------------------
+
+steps/align_si.sh --nj 6 --cmd run.pl data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_deltas.sh --cmd run.pl 3000 35000 data/train data/lang exp/tri1_ali exp/tri2
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/tri1_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2/log/analyze_alignments.log
+24652 warnings in exp/tri2/log/acc.*.*.log
+7762 warnings in exp/tri2/log/align.*.*.log
+3 warnings in exp/tri2/log/init_model.log
+1 warnings in exp/tri2/log/build_tree.log
+exp/tri2: nj=6 align prob=-95.47 over 82.27h [retry=5.2%, fail=2.2%] states=2440 gauss=35068 tree-impr=5.51
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri2
+steps/get_prons.sh --cmd run.pl data/train data/lang exp/tri2
+steps/get_prons.sh: exp/tri2/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri2/prons.*.gz, silence counts in
+steps/get_prons.sh: exp/tri2/sil_counts_nowb.txt and pronunciation counts in
+steps/get_prons.sh: exp/tri2/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri2/pron_counts_nowb.txt
+Checking data/local/silence_phones.txt ...
+--> reading data/local/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/silence_phones.txt is OK
+
+Checking data/local/optional_silence.txt ...
+--> reading data/local/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/optional_silence.txt is OK
+
+Checking data/local/nonsilence_phones.txt ...
+--> reading data/local/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lexicon.txt
+--> reading data/local/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexicon.txt is OK
+
+Checking data/local/lexiconp.txt
+--> reading data/local/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexiconp.txt is OK
+
+Checking lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt
+--> lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt match
+
+Checking data/local/extra_questions.txt ...
+--> data/local/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dictp/tri2/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dictp/tri2 ..
+Checking data/local/dictp/tri2/silence_phones.txt ...
+--> reading data/local/dictp/tri2/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/silence_phones.txt is OK
+
+Checking data/local/dictp/tri2/optional_silence.txt ...
+--> reading data/local/dictp/tri2/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/optional_silence.txt is OK
+
+Checking data/local/dictp/tri2/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri2/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri2/lexicon.txt
+--> reading data/local/dictp/tri2/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/lexicon.txt is OK
+
+Checking data/local/dictp/tri2/lexiconp.txt
+--> reading data/local/dictp/tri2/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/lexiconp.txt is OK
+
+Checking data/local/dictp/tri2/lexiconp_silprob.txt
+--> reading data/local/dictp/tri2/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri2/lexicon.txt and data/local/dictp/tri2/lexiconp.txt
+--> lexicon pair data/local/dictp/tri2/lexicon.txt and data/local/dictp/tri2/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri2/lexiconp.txt and data/local/dictp/tri2/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri2/lexiconp.txt and data/local/dictp/tri2/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri2/extra_questions.txt ...
+--> data/local/dictp/tri2/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri2]
+
+Some low-probability prons include:
+# sort -k2,2 -n data/local/dictp/tri2/lexiconp.txt  | head -n 8
+!SIL 1 sil
+<UNK> 1 spn
+а 1 а
+аа 1 а а
+абатстві 1 а б а ц т в' і
+абдирать 1 а б д и р а т'
+абетки 1 а б е т к и
+абеткою 1 а б е т к о й у
+utils/prepare_lang.sh --phone-symbol-table data/lang/phones.txt --share-silence-phones true data/local/dictp/tri2 <UNK> data/local/langp/tri2 data/langp/tri2
+Checking data/local/dictp/tri2/silence_phones.txt ...
+--> reading data/local/dictp/tri2/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/silence_phones.txt is OK
+
+Checking data/local/dictp/tri2/optional_silence.txt ...
+--> reading data/local/dictp/tri2/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/optional_silence.txt is OK
+
+Checking data/local/dictp/tri2/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri2/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri2/lexicon.txt
+--> reading data/local/dictp/tri2/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/lexicon.txt is OK
+
+Checking data/local/dictp/tri2/lexiconp.txt
+--> reading data/local/dictp/tri2/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/lexiconp.txt is OK
+
+Checking data/local/dictp/tri2/lexiconp_silprob.txt
+--> reading data/local/dictp/tri2/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri2/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri2/lexicon.txt and data/local/dictp/tri2/lexiconp.txt
+--> lexicon pair data/local/dictp/tri2/lexicon.txt and data/local/dictp/tri2/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri2/lexiconp.txt and data/local/dictp/tri2/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri2/lexiconp.txt and data/local/dictp/tri2/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri2/extra_questions.txt ...
+--> data/local/dictp/tri2/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri2]
+
+fstaddselfloops data/langp/tri2/phones/wdisambig_phones.int data/langp/tri2/phones/wdisambig_words.int
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/langp/tri2
+Checking existence of separator file
+separator file data/langp/tri2/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/langp/tri2/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri2/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri2/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/langp/tri2/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri2/phones/context_indep.txt
+--> data/langp/tri2/phones/context_indep.int corresponds to data/langp/tri2/phones/context_indep.txt
+--> data/langp/tri2/phones/context_indep.csl corresponds to data/langp/tri2/phones/context_indep.txt
+--> data/langp/tri2/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/langp/tri2/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 316 entry/entries in data/langp/tri2/phones/nonsilence.txt
+--> data/langp/tri2/phones/nonsilence.int corresponds to data/langp/tri2/phones/nonsilence.txt
+--> data/langp/tri2/phones/nonsilence.csl corresponds to data/langp/tri2/phones/nonsilence.txt
+--> data/langp/tri2/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/langp/tri2/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri2/phones/silence.txt
+--> data/langp/tri2/phones/silence.int corresponds to data/langp/tri2/phones/silence.txt
+--> data/langp/tri2/phones/silence.csl corresponds to data/langp/tri2/phones/silence.txt
+--> data/langp/tri2/phones/silence.{txt, int, csl} are OK
+
+Checking data/langp/tri2/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri2/phones/optional_silence.txt
+--> data/langp/tri2/phones/optional_silence.int corresponds to data/langp/tri2/phones/optional_silence.txt
+--> data/langp/tri2/phones/optional_silence.csl corresponds to data/langp/tri2/phones/optional_silence.txt
+--> data/langp/tri2/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/langp/tri2/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/langp/tri2/phones/disambig.txt
+--> data/langp/tri2/phones/disambig.int corresponds to data/langp/tri2/phones/disambig.txt
+--> data/langp/tri2/phones/disambig.csl corresponds to data/langp/tri2/phones/disambig.txt
+--> data/langp/tri2/phones/disambig.{txt, int, csl} are OK
+
+Checking data/langp/tri2/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri2/phones/roots.txt
+--> data/langp/tri2/phones/roots.int corresponds to data/langp/tri2/phones/roots.txt
+--> data/langp/tri2/phones/roots.{txt, int} are OK
+
+Checking data/langp/tri2/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri2/phones/sets.txt
+--> data/langp/tri2/phones/sets.int corresponds to data/langp/tri2/phones/sets.txt
+--> data/langp/tri2/phones/sets.{txt, int} are OK
+
+Checking data/langp/tri2/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/langp/tri2/phones/extra_questions.txt
+--> data/langp/tri2/phones/extra_questions.int corresponds to data/langp/tri2/phones/extra_questions.txt
+--> data/langp/tri2/phones/extra_questions.{txt, int} are OK
+
+Checking data/langp/tri2/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 326 entry/entries in data/langp/tri2/phones/word_boundary.txt
+--> data/langp/tri2/phones/word_boundary.int corresponds to data/langp/tri2/phones/word_boundary.txt
+--> data/langp/tri2/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/langp/tri2/phones/optional_silence.txt
+--> data/langp/tri2/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/langp/tri2/phones/disambig.txt has "#0" and "#1"
+--> data/langp/tri2/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/langp/tri2/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/langp/tri2/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/langp/tri2/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/langp/tri2/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 14 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 93 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/langp/tri2/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri2/oov.txt
+--> data/langp/tri2/oov.int corresponds to data/langp/tri2/oov.txt
+--> data/langp/tri2/oov.{txt, int} are OK
+
+--> data/langp/tri2/L.fst is olabel sorted
+--> data/langp/tri2/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/langp/tri2]
+
+---------------------------------------------------------------------
+Starting (full) triphone training in exp/tri3 on Thu Jun 11 01:05:03 UTC 2020
+---------------------------------------------------------------------
+
+steps/align_si.sh --nj 6 --cmd run.pl data/train data/lang exp/tri2 exp/tri2_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri2, putting alignments in exp/tri2_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/lang exp/tri2_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_deltas.sh --cmd run.pl 4000 50000 data/train data/langp/tri2 exp/tri2_ali exp/tri3
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+steps/train_deltas.sh: converting alignments from exp/tri2_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/langp/tri2 exp/tri3
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3/log/analyze_alignments.log
+1 warnings in exp/tri3/log/build_tree.log
+7725 warnings in exp/tri3/log/align.*.*.log
+3 warnings in exp/tri3/log/init_model.log
+25751 warnings in exp/tri3/log/acc.*.*.log
+1 warnings in exp/tri3/log/update.*.log
+exp/tri3: nj=6 align prob=-95.03 over 82.24h [retry=5.0%, fail=2.2%] states=3216 gauss=50071 tree-impr=5.81
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri3
+steps/get_prons.sh --cmd run.pl data/train data/lang exp/tri3
+steps/get_prons.sh: exp/tri3/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri3/prons.*.gz, silence counts in
+steps/get_prons.sh: exp/tri3/sil_counts_nowb.txt and pronunciation counts in
+steps/get_prons.sh: exp/tri3/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri3/pron_counts_nowb.txt
+Checking data/local/silence_phones.txt ...
+--> reading data/local/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/silence_phones.txt is OK
+
+Checking data/local/optional_silence.txt ...
+--> reading data/local/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/optional_silence.txt is OK
+
+Checking data/local/nonsilence_phones.txt ...
+--> reading data/local/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lexicon.txt
+--> reading data/local/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexicon.txt is OK
+
+Checking data/local/lexiconp.txt
+--> reading data/local/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexiconp.txt is OK
+
+Checking lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt
+--> lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt match
+
+Checking data/local/extra_questions.txt ...
+--> data/local/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dictp/tri3/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dictp/tri3 ..
+Checking data/local/dictp/tri3/silence_phones.txt ...
+--> reading data/local/dictp/tri3/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/silence_phones.txt is OK
+
+Checking data/local/dictp/tri3/optional_silence.txt ...
+--> reading data/local/dictp/tri3/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/optional_silence.txt is OK
+
+Checking data/local/dictp/tri3/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri3/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri3/lexicon.txt
+--> reading data/local/dictp/tri3/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/lexicon.txt is OK
+
+Checking data/local/dictp/tri3/lexiconp.txt
+--> reading data/local/dictp/tri3/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/lexiconp.txt is OK
+
+Checking data/local/dictp/tri3/lexiconp_silprob.txt
+--> reading data/local/dictp/tri3/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri3/lexicon.txt and data/local/dictp/tri3/lexiconp.txt
+--> lexicon pair data/local/dictp/tri3/lexicon.txt and data/local/dictp/tri3/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri3/lexiconp.txt and data/local/dictp/tri3/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri3/lexiconp.txt and data/local/dictp/tri3/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri3/extra_questions.txt ...
+--> data/local/dictp/tri3/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri3]
+
+Some low-probability prons include:
+# sort -k2,2 -n data/local/dictp/tri3/lexiconp.txt  | head -n 8
+!SIL 1 sil
+<UNK> 1 spn
+а 1 а
+аа 1 а а
+абатстві 1 а б а ц т в' і
+абдирать 1 а б д и р а т'
+абетки 1 а б е т к и
+абеткою 1 а б е т к о й у
+utils/prepare_lang.sh --phone-symbol-table data/lang/phones.txt --share-silence-phones true data/local/dictp/tri3 <UNK> data/local/langp/tri3 data/langp/tri3
+Checking data/local/dictp/tri3/silence_phones.txt ...
+--> reading data/local/dictp/tri3/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/silence_phones.txt is OK
+
+Checking data/local/dictp/tri3/optional_silence.txt ...
+--> reading data/local/dictp/tri3/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/optional_silence.txt is OK
+
+Checking data/local/dictp/tri3/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri3/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri3/lexicon.txt
+--> reading data/local/dictp/tri3/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/lexicon.txt is OK
+
+Checking data/local/dictp/tri3/lexiconp.txt
+--> reading data/local/dictp/tri3/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/lexiconp.txt is OK
+
+Checking data/local/dictp/tri3/lexiconp_silprob.txt
+--> reading data/local/dictp/tri3/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri3/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri3/lexicon.txt and data/local/dictp/tri3/lexiconp.txt
+--> lexicon pair data/local/dictp/tri3/lexicon.txt and data/local/dictp/tri3/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri3/lexiconp.txt and data/local/dictp/tri3/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri3/lexiconp.txt and data/local/dictp/tri3/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri3/extra_questions.txt ...
+--> data/local/dictp/tri3/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri3]
+
+fstaddselfloops data/langp/tri3/phones/wdisambig_phones.int data/langp/tri3/phones/wdisambig_words.int
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/langp/tri3
+Checking existence of separator file
+separator file data/langp/tri3/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/langp/tri3/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri3/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri3/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/langp/tri3/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri3/phones/context_indep.txt
+--> data/langp/tri3/phones/context_indep.int corresponds to data/langp/tri3/phones/context_indep.txt
+--> data/langp/tri3/phones/context_indep.csl corresponds to data/langp/tri3/phones/context_indep.txt
+--> data/langp/tri3/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/langp/tri3/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 316 entry/entries in data/langp/tri3/phones/nonsilence.txt
+--> data/langp/tri3/phones/nonsilence.int corresponds to data/langp/tri3/phones/nonsilence.txt
+--> data/langp/tri3/phones/nonsilence.csl corresponds to data/langp/tri3/phones/nonsilence.txt
+--> data/langp/tri3/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/langp/tri3/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri3/phones/silence.txt
+--> data/langp/tri3/phones/silence.int corresponds to data/langp/tri3/phones/silence.txt
+--> data/langp/tri3/phones/silence.csl corresponds to data/langp/tri3/phones/silence.txt
+--> data/langp/tri3/phones/silence.{txt, int, csl} are OK
+
+Checking data/langp/tri3/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri3/phones/optional_silence.txt
+--> data/langp/tri3/phones/optional_silence.int corresponds to data/langp/tri3/phones/optional_silence.txt
+--> data/langp/tri3/phones/optional_silence.csl corresponds to data/langp/tri3/phones/optional_silence.txt
+--> data/langp/tri3/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/langp/tri3/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/langp/tri3/phones/disambig.txt
+--> data/langp/tri3/phones/disambig.int corresponds to data/langp/tri3/phones/disambig.txt
+--> data/langp/tri3/phones/disambig.csl corresponds to data/langp/tri3/phones/disambig.txt
+--> data/langp/tri3/phones/disambig.{txt, int, csl} are OK
+
+Checking data/langp/tri3/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri3/phones/roots.txt
+--> data/langp/tri3/phones/roots.int corresponds to data/langp/tri3/phones/roots.txt
+--> data/langp/tri3/phones/roots.{txt, int} are OK
+
+Checking data/langp/tri3/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri3/phones/sets.txt
+--> data/langp/tri3/phones/sets.int corresponds to data/langp/tri3/phones/sets.txt
+--> data/langp/tri3/phones/sets.{txt, int} are OK
+
+Checking data/langp/tri3/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/langp/tri3/phones/extra_questions.txt
+--> data/langp/tri3/phones/extra_questions.int corresponds to data/langp/tri3/phones/extra_questions.txt
+--> data/langp/tri3/phones/extra_questions.{txt, int} are OK
+
+Checking data/langp/tri3/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 326 entry/entries in data/langp/tri3/phones/word_boundary.txt
+--> data/langp/tri3/phones/word_boundary.int corresponds to data/langp/tri3/phones/word_boundary.txt
+--> data/langp/tri3/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/langp/tri3/phones/optional_silence.txt
+--> data/langp/tri3/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/langp/tri3/phones/disambig.txt has "#0" and "#1"
+--> data/langp/tri3/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/langp/tri3/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/langp/tri3/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/langp/tri3/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/langp/tri3/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 83 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 11 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/langp/tri3/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri3/oov.txt
+--> data/langp/tri3/oov.int corresponds to data/langp/tri3/oov.txt
+--> data/langp/tri3/oov.{txt, int} are OK
+
+--> data/langp/tri3/L.fst is olabel sorted
+--> data/langp/tri3/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/langp/tri3]
+
+---------------------------------------------------------------------
+Starting (lda_mllt) triphone training in exp/tri4 on Thu Jun 11 01:25:44 UTC 2020
+---------------------------------------------------------------------
+
+steps/align_si.sh --nj 6 --cmd run.pl data/train data/langp/tri3 exp/tri3 exp/tri3_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri3, putting alignments in exp/tri3_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/langp/tri3 exp/tri3_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_lda_mllt.sh --cmd run.pl 5000 70000 data/train data/langp/tri3 exp/tri3_ali exp/tri4
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+steps/train_lda_mllt.sh: Converting alignments from exp/tri3_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/langp/tri3 exp/tri4
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4/log/analyze_alignments.log
+3 warnings in exp/tri4/log/init_model.log
+28494 warnings in exp/tri4/log/acc.*.*.log
+1 warnings in exp/tri4/log/build_tree.log
+7934 warnings in exp/tri4/log/align.*.*.log
+751 warnings in exp/tri4/log/lda_acc.*.log
+exp/tri4: nj=6 align prob=-44.50 over 81.94h [retry=4.9%, fail=2.5%] states=3976 gauss=70133 tree-impr=6.55 lda-sum=23.81 mllt:impr,logdet=1.30,2.08
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri4
+steps/get_prons.sh --cmd run.pl data/train data/lang exp/tri4
+steps/get_prons.sh: exp/tri4/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri4/prons.*.gz, silence counts in
+steps/get_prons.sh: exp/tri4/sil_counts_nowb.txt and pronunciation counts in
+steps/get_prons.sh: exp/tri4/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri4/pron_counts_nowb.txt
+Checking data/local/silence_phones.txt ...
+--> reading data/local/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/silence_phones.txt is OK
+
+Checking data/local/optional_silence.txt ...
+--> reading data/local/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/optional_silence.txt is OK
+
+Checking data/local/nonsilence_phones.txt ...
+--> reading data/local/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lexicon.txt
+--> reading data/local/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexicon.txt is OK
+
+Checking data/local/lexiconp.txt
+--> reading data/local/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexiconp.txt is OK
+
+Checking lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt
+--> lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt match
+
+Checking data/local/extra_questions.txt ...
+--> data/local/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dictp/tri4/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dictp/tri4 ..
+Checking data/local/dictp/tri4/silence_phones.txt ...
+--> reading data/local/dictp/tri4/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/silence_phones.txt is OK
+
+Checking data/local/dictp/tri4/optional_silence.txt ...
+--> reading data/local/dictp/tri4/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/optional_silence.txt is OK
+
+Checking data/local/dictp/tri4/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri4/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri4/lexicon.txt
+--> reading data/local/dictp/tri4/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/lexicon.txt is OK
+
+Checking data/local/dictp/tri4/lexiconp.txt
+--> reading data/local/dictp/tri4/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/lexiconp.txt is OK
+
+Checking data/local/dictp/tri4/lexiconp_silprob.txt
+--> reading data/local/dictp/tri4/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri4/lexicon.txt and data/local/dictp/tri4/lexiconp.txt
+--> lexicon pair data/local/dictp/tri4/lexicon.txt and data/local/dictp/tri4/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri4/lexiconp.txt and data/local/dictp/tri4/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri4/lexiconp.txt and data/local/dictp/tri4/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri4/extra_questions.txt ...
+--> data/local/dictp/tri4/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri4]
+
+Some low-probability prons include:
+# sort -k2,2 -n data/local/dictp/tri4/lexiconp.txt  | head -n 8
+!SIL 1 sil
+<UNK> 1 spn
+а 1 а
+аа 1 а а
+абатстві 1 а б а ц т в' і
+абдирать 1 а б д и р а т'
+абетки 1 а б е т к и
+абеткою 1 а б е т к о й у
+utils/prepare_lang.sh --phone-symbol-table data/lang/phones.txt --share-silence-phones true data/local/dictp/tri4 <UNK> data/local/langp/tri4 data/langp/tri4
+Checking data/local/dictp/tri4/silence_phones.txt ...
+--> reading data/local/dictp/tri4/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/silence_phones.txt is OK
+
+Checking data/local/dictp/tri4/optional_silence.txt ...
+--> reading data/local/dictp/tri4/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/optional_silence.txt is OK
+
+Checking data/local/dictp/tri4/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri4/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri4/lexicon.txt
+--> reading data/local/dictp/tri4/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/lexicon.txt is OK
+
+Checking data/local/dictp/tri4/lexiconp.txt
+--> reading data/local/dictp/tri4/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/lexiconp.txt is OK
+
+Checking data/local/dictp/tri4/lexiconp_silprob.txt
+--> reading data/local/dictp/tri4/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri4/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri4/lexicon.txt and data/local/dictp/tri4/lexiconp.txt
+--> lexicon pair data/local/dictp/tri4/lexicon.txt and data/local/dictp/tri4/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri4/lexiconp.txt and data/local/dictp/tri4/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri4/lexiconp.txt and data/local/dictp/tri4/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri4/extra_questions.txt ...
+--> data/local/dictp/tri4/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri4]
+
+fstaddselfloops data/langp/tri4/phones/wdisambig_phones.int data/langp/tri4/phones/wdisambig_words.int
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/langp/tri4
+Checking existence of separator file
+separator file data/langp/tri4/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/langp/tri4/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri4/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri4/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/langp/tri4/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri4/phones/context_indep.txt
+--> data/langp/tri4/phones/context_indep.int corresponds to data/langp/tri4/phones/context_indep.txt
+--> data/langp/tri4/phones/context_indep.csl corresponds to data/langp/tri4/phones/context_indep.txt
+--> data/langp/tri4/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/langp/tri4/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 316 entry/entries in data/langp/tri4/phones/nonsilence.txt
+--> data/langp/tri4/phones/nonsilence.int corresponds to data/langp/tri4/phones/nonsilence.txt
+--> data/langp/tri4/phones/nonsilence.csl corresponds to data/langp/tri4/phones/nonsilence.txt
+--> data/langp/tri4/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/langp/tri4/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri4/phones/silence.txt
+--> data/langp/tri4/phones/silence.int corresponds to data/langp/tri4/phones/silence.txt
+--> data/langp/tri4/phones/silence.csl corresponds to data/langp/tri4/phones/silence.txt
+--> data/langp/tri4/phones/silence.{txt, int, csl} are OK
+
+Checking data/langp/tri4/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri4/phones/optional_silence.txt
+--> data/langp/tri4/phones/optional_silence.int corresponds to data/langp/tri4/phones/optional_silence.txt
+--> data/langp/tri4/phones/optional_silence.csl corresponds to data/langp/tri4/phones/optional_silence.txt
+--> data/langp/tri4/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/langp/tri4/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/langp/tri4/phones/disambig.txt
+--> data/langp/tri4/phones/disambig.int corresponds to data/langp/tri4/phones/disambig.txt
+--> data/langp/tri4/phones/disambig.csl corresponds to data/langp/tri4/phones/disambig.txt
+--> data/langp/tri4/phones/disambig.{txt, int, csl} are OK
+
+Checking data/langp/tri4/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri4/phones/roots.txt
+--> data/langp/tri4/phones/roots.int corresponds to data/langp/tri4/phones/roots.txt
+--> data/langp/tri4/phones/roots.{txt, int} are OK
+
+Checking data/langp/tri4/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri4/phones/sets.txt
+--> data/langp/tri4/phones/sets.int corresponds to data/langp/tri4/phones/sets.txt
+--> data/langp/tri4/phones/sets.{txt, int} are OK
+
+Checking data/langp/tri4/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/langp/tri4/phones/extra_questions.txt
+--> data/langp/tri4/phones/extra_questions.int corresponds to data/langp/tri4/phones/extra_questions.txt
+--> data/langp/tri4/phones/extra_questions.{txt, int} are OK
+
+Checking data/langp/tri4/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 326 entry/entries in data/langp/tri4/phones/word_boundary.txt
+--> data/langp/tri4/phones/word_boundary.int corresponds to data/langp/tri4/phones/word_boundary.txt
+--> data/langp/tri4/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/langp/tri4/phones/optional_silence.txt
+--> data/langp/tri4/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/langp/tri4/phones/disambig.txt has "#0" and "#1"
+--> data/langp/tri4/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/langp/tri4/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/langp/tri4/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/langp/tri4/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/langp/tri4/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 42 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 43 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/langp/tri4/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri4/oov.txt
+--> data/langp/tri4/oov.int corresponds to data/langp/tri4/oov.txt
+--> data/langp/tri4/oov.{txt, int} are OK
+
+--> data/langp/tri4/L.fst is olabel sorted
+--> data/langp/tri4/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/langp/tri4]
+
+---------------------------------------------------------------------
+Starting (SAT) triphone training in exp/tri5 on Thu Jun 11 01:49:08 UTC 2020
+---------------------------------------------------------------------
+
+steps/align_si.sh --nj 6 --cmd run.pl data/train data/langp/tri4 exp/tri4 exp/tri4_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train using model from exp/tri4, putting alignments in exp/tri4_ali
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/langp/tri4 exp/tri4_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri4_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_sat.sh --cmd run.pl 6000 90000 data/train data/langp/tri4 exp/tri4_ali exp/tri5
+steps/train_sat.sh: feature type is lda
+steps/train_sat.sh: obtaining initial fMLLR transforms since not present in exp/tri4_ali
+steps/train_sat.sh: Accumulating tree stats
+steps/train_sat.sh: Getting questions for tree clustering.
+steps/train_sat.sh: Building the tree
+steps/train_sat.sh: Initializing the model
+steps/train_sat.sh: Converting alignments from exp/tri4_ali to use current tree
+steps/train_sat.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating fMLLR transforms
+Pass 3
+Pass 4
+Estimating fMLLR transforms
+Pass 5
+Pass 6
+Estimating fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/langp/tri4 exp/tri5
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri5/log/analyze_alignments.log
+3 warnings in exp/tri5/log/update.*.log
+31309 warnings in exp/tri5/log/acc.*.*.log
+3 warnings in exp/tri5/log/init_model.log
+4463 warnings in exp/tri5/log/fmllr.*.*.log
+8031 warnings in exp/tri5/log/align.*.*.log
+1 warnings in exp/tri5/log/build_tree.log
+steps/train_sat.sh: Likelihood evolution:
+-50.2226 -49.9804 -49.703 -49.3733 -48.5904 -47.7702 -47.0771 -46.4627 -46.0382 -45.4431 -45.1362 -45.0061 -44.6497 -44.4938 -44.3566 -44.222 -44.1072 -44.0028 -43.9063 -43.7229 -43.608 -43.5309 -43.461 -43.3955 -43.3331 -43.2729 -43.2154 -43.1592 -43.1048 -43.0045 -42.9366 -42.9071 -42.8891 -42.8764
+exp/tri5: nj=6 align prob=-45.01 over 81.85h [retry=4.9%, fail=2.6%] states=4864 gauss=90101 fmllr-impr=1.36 over 63.55h tree-impr=9.59
+steps/train_sat.sh: done training SAT system in exp/tri5
+steps/get_prons.sh --cmd run.pl data/train data/lang exp/tri5
+steps/get_prons.sh: exp/tri5/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri5/prons.*.gz, silence counts in
+steps/get_prons.sh: exp/tri5/sil_counts_nowb.txt and pronunciation counts in
+steps/get_prons.sh: exp/tri5/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri5/pron_counts_nowb.txt
+Checking data/local/silence_phones.txt ...
+--> reading data/local/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/silence_phones.txt is OK
+
+Checking data/local/optional_silence.txt ...
+--> reading data/local/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/optional_silence.txt is OK
+
+Checking data/local/nonsilence_phones.txt ...
+--> reading data/local/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lexicon.txt
+--> reading data/local/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexicon.txt is OK
+
+Checking data/local/lexiconp.txt
+--> reading data/local/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexiconp.txt is OK
+
+Checking lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt
+--> lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt match
+
+Checking data/local/extra_questions.txt ...
+--> data/local/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dictp/tri5/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dictp/tri5 ..
+Checking data/local/dictp/tri5/silence_phones.txt ...
+--> reading data/local/dictp/tri5/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/silence_phones.txt is OK
+
+Checking data/local/dictp/tri5/optional_silence.txt ...
+--> reading data/local/dictp/tri5/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/optional_silence.txt is OK
+
+Checking data/local/dictp/tri5/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri5/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri5/lexicon.txt
+--> reading data/local/dictp/tri5/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/lexicon.txt is OK
+
+Checking data/local/dictp/tri5/lexiconp.txt
+--> reading data/local/dictp/tri5/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/lexiconp.txt is OK
+
+Checking data/local/dictp/tri5/lexiconp_silprob.txt
+--> reading data/local/dictp/tri5/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri5/lexicon.txt and data/local/dictp/tri5/lexiconp.txt
+--> lexicon pair data/local/dictp/tri5/lexicon.txt and data/local/dictp/tri5/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri5/lexiconp.txt and data/local/dictp/tri5/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri5/lexiconp.txt and data/local/dictp/tri5/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri5/extra_questions.txt ...
+--> data/local/dictp/tri5/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri5]
+
+Some low-probability prons include:
+# sort -k2,2 -n data/local/dictp/tri5/lexiconp.txt  | head -n 8
+!SIL 1 sil
+<UNK> 1 spn
+а 1 а
+аа 1 а а
+абатстві 1 а б а ц т в' і
+абдирать 1 а б д и р а т'
+абетки 1 а б е т к и
+абеткою 1 а б е т к о й у
+utils/prepare_lang.sh --phone-symbol-table data/lang/phones.txt --share-silence-phones true data/local/dictp/tri5 <UNK> data/local/langp/tri5 data/langp/tri5
+Checking data/local/dictp/tri5/silence_phones.txt ...
+--> reading data/local/dictp/tri5/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/silence_phones.txt is OK
+
+Checking data/local/dictp/tri5/optional_silence.txt ...
+--> reading data/local/dictp/tri5/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/optional_silence.txt is OK
+
+Checking data/local/dictp/tri5/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri5/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri5/lexicon.txt
+--> reading data/local/dictp/tri5/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/lexicon.txt is OK
+
+Checking data/local/dictp/tri5/lexiconp.txt
+--> reading data/local/dictp/tri5/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/lexiconp.txt is OK
+
+Checking data/local/dictp/tri5/lexiconp_silprob.txt
+--> reading data/local/dictp/tri5/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri5/lexicon.txt and data/local/dictp/tri5/lexiconp.txt
+--> lexicon pair data/local/dictp/tri5/lexicon.txt and data/local/dictp/tri5/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri5/lexiconp.txt and data/local/dictp/tri5/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri5/lexiconp.txt and data/local/dictp/tri5/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri5/extra_questions.txt ...
+--> data/local/dictp/tri5/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri5]
+
+fstaddselfloops data/langp/tri5/phones/wdisambig_phones.int data/langp/tri5/phones/wdisambig_words.int
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/langp/tri5
+Checking existence of separator file
+separator file data/langp/tri5/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/langp/tri5/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri5/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri5/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/langp/tri5/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri5/phones/context_indep.txt
+--> data/langp/tri5/phones/context_indep.int corresponds to data/langp/tri5/phones/context_indep.txt
+--> data/langp/tri5/phones/context_indep.csl corresponds to data/langp/tri5/phones/context_indep.txt
+--> data/langp/tri5/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/langp/tri5/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 316 entry/entries in data/langp/tri5/phones/nonsilence.txt
+--> data/langp/tri5/phones/nonsilence.int corresponds to data/langp/tri5/phones/nonsilence.txt
+--> data/langp/tri5/phones/nonsilence.csl corresponds to data/langp/tri5/phones/nonsilence.txt
+--> data/langp/tri5/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/langp/tri5/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri5/phones/silence.txt
+--> data/langp/tri5/phones/silence.int corresponds to data/langp/tri5/phones/silence.txt
+--> data/langp/tri5/phones/silence.csl corresponds to data/langp/tri5/phones/silence.txt
+--> data/langp/tri5/phones/silence.{txt, int, csl} are OK
+
+Checking data/langp/tri5/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri5/phones/optional_silence.txt
+--> data/langp/tri5/phones/optional_silence.int corresponds to data/langp/tri5/phones/optional_silence.txt
+--> data/langp/tri5/phones/optional_silence.csl corresponds to data/langp/tri5/phones/optional_silence.txt
+--> data/langp/tri5/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/langp/tri5/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/langp/tri5/phones/disambig.txt
+--> data/langp/tri5/phones/disambig.int corresponds to data/langp/tri5/phones/disambig.txt
+--> data/langp/tri5/phones/disambig.csl corresponds to data/langp/tri5/phones/disambig.txt
+--> data/langp/tri5/phones/disambig.{txt, int, csl} are OK
+
+Checking data/langp/tri5/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri5/phones/roots.txt
+--> data/langp/tri5/phones/roots.int corresponds to data/langp/tri5/phones/roots.txt
+--> data/langp/tri5/phones/roots.{txt, int} are OK
+
+Checking data/langp/tri5/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri5/phones/sets.txt
+--> data/langp/tri5/phones/sets.int corresponds to data/langp/tri5/phones/sets.txt
+--> data/langp/tri5/phones/sets.{txt, int} are OK
+
+Checking data/langp/tri5/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/langp/tri5/phones/extra_questions.txt
+--> data/langp/tri5/phones/extra_questions.int corresponds to data/langp/tri5/phones/extra_questions.txt
+--> data/langp/tri5/phones/extra_questions.{txt, int} are OK
+
+Checking data/langp/tri5/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 326 entry/entries in data/langp/tri5/phones/word_boundary.txt
+--> data/langp/tri5/phones/word_boundary.int corresponds to data/langp/tri5/phones/word_boundary.txt
+--> data/langp/tri5/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/langp/tri5/phones/optional_silence.txt
+--> data/langp/tri5/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/langp/tri5/phones/disambig.txt has "#0" and "#1"
+--> data/langp/tri5/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/langp/tri5/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/langp/tri5/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/langp/tri5/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/langp/tri5/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 61 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 17 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/langp/tri5/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri5/oov.txt
+--> data/langp/tri5/oov.int corresponds to data/langp/tri5/oov.txt
+--> data/langp/tri5/oov.{txt, int} are OK
+
+--> data/langp/tri5/L.fst is olabel sorted
+--> data/langp/tri5/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/langp/tri5]
+
+---------------------------------------------------------------------
+Starting exp/tri5_ali on Thu Jun 11 02:16:31 UTC 2020
+---------------------------------------------------------------------
+
+steps/align_fmllr.sh --nj 6 --cmd run.pl data/train data/langp/tri5 exp/tri5 exp/tri5_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri5/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd run.pl data/langp/tri5 exp/tri5_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri5_ali/log/analyze_alignments.log
+2544 warnings in exp/tri5_ali/log/align_pass1.*.log
+2558 warnings in exp/tri5_ali/log/align_pass2.*.log
+864 warnings in exp/tri5_ali/log/fmllr.*.log
+steps/get_prons.sh --cmd run.pl data/train data/lang exp/tri5_ali
+steps/get_prons.sh: exp/tri5_ali/ali.1.gz exists, so starting from alignments.
+steps/get_prons.sh: done writing prons to exp/tri5_ali/prons.*.gz, silence counts in
+steps/get_prons.sh: exp/tri5_ali/sil_counts_nowb.txt and pronunciation counts in
+steps/get_prons.sh: exp/tri5_ali/pron_counts.{int,txt}
+steps/get_prons.sh: ... and also in exp/tri5_ali/pron_counts_nowb.txt
+Checking data/local/silence_phones.txt ...
+--> reading data/local/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/silence_phones.txt is OK
+
+Checking data/local/optional_silence.txt ...
+--> reading data/local/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/optional_silence.txt is OK
+
+Checking data/local/nonsilence_phones.txt ...
+--> reading data/local/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/lexicon.txt
+--> reading data/local/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexicon.txt is OK
+
+Checking data/local/lexiconp.txt
+--> reading data/local/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/lexiconp.txt is OK
+
+Checking lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt
+--> lexicon pair data/local/lexicon.txt and data/local/lexiconp.txt match
+
+Checking data/local/extra_questions.txt ...
+--> data/local/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local]
+
+utils/dict_dir_add_pronprobs.sh: normalizing pronprobs so maximum is 1 for each word.
+utils/dict_dir_add_pronprobs.sh: produced dictionary directory with probabilities in data/local/dictp/tri5_ali/
+utils/dict_dir_add_pronprobs.sh: validating data/local/dictp/tri5_ali ..
+Checking data/local/dictp/tri5_ali/silence_phones.txt ...
+--> reading data/local/dictp/tri5_ali/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/silence_phones.txt is OK
+
+Checking data/local/dictp/tri5_ali/optional_silence.txt ...
+--> reading data/local/dictp/tri5_ali/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/optional_silence.txt is OK
+
+Checking data/local/dictp/tri5_ali/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri5_ali/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri5_ali/lexicon.txt
+--> reading data/local/dictp/tri5_ali/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/lexicon.txt is OK
+
+Checking data/local/dictp/tri5_ali/lexiconp.txt
+--> reading data/local/dictp/tri5_ali/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/lexiconp.txt is OK
+
+Checking data/local/dictp/tri5_ali/lexiconp_silprob.txt
+--> reading data/local/dictp/tri5_ali/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri5_ali/lexicon.txt and data/local/dictp/tri5_ali/lexiconp.txt
+--> lexicon pair data/local/dictp/tri5_ali/lexicon.txt and data/local/dictp/tri5_ali/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri5_ali/lexiconp.txt and data/local/dictp/tri5_ali/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri5_ali/lexiconp.txt and data/local/dictp/tri5_ali/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri5_ali/extra_questions.txt ...
+--> data/local/dictp/tri5_ali/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri5_ali]
+
+Some low-probability prons include:
+# sort -k2,2 -n data/local/dictp/tri5_ali/lexiconp.txt  | head -n 8
+!SIL 1 sil
+<UNK> 1 spn
+а 1 а
+аа 1 а а
+абатстві 1 а б а ц т в' і
+абдирать 1 а б д и р а т'
+абетки 1 а б е т к и
+абеткою 1 а б е т к о й у
+utils/prepare_lang.sh --phone-symbol-table data/lang/phones.txt --share-silence-phones true data/local/dictp/tri5_ali <UNK> data/local/langp/tri5_ali data/langp/tri5_ali
+Checking data/local/dictp/tri5_ali/silence_phones.txt ...
+--> reading data/local/dictp/tri5_ali/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/silence_phones.txt is OK
+
+Checking data/local/dictp/tri5_ali/optional_silence.txt ...
+--> reading data/local/dictp/tri5_ali/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/optional_silence.txt is OK
+
+Checking data/local/dictp/tri5_ali/nonsilence_phones.txt ...
+--> reading data/local/dictp/tri5_ali/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dictp/tri5_ali/lexicon.txt
+--> reading data/local/dictp/tri5_ali/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/lexicon.txt is OK
+
+Checking data/local/dictp/tri5_ali/lexiconp.txt
+--> reading data/local/dictp/tri5_ali/lexiconp.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/lexiconp.txt is OK
+
+Checking data/local/dictp/tri5_ali/lexiconp_silprob.txt
+--> reading data/local/dictp/tri5_ali/lexiconp_silprob.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dictp/tri5_ali/lexiconp_silprob.txt is OK
+
+Checking lexicon pair data/local/dictp/tri5_ali/lexicon.txt and data/local/dictp/tri5_ali/lexiconp.txt
+--> lexicon pair data/local/dictp/tri5_ali/lexicon.txt and data/local/dictp/tri5_ali/lexiconp.txt match
+
+Checking lexicon pair data/local/dictp/tri5_ali/lexiconp.txt and data/local/dictp/tri5_ali/lexiconp_silprob.txt
+--> lexicon pair data/local/dictp/tri5_ali/lexiconp.txt and data/local/dictp/tri5_ali/lexiconp_silprob.txt match
+
+Checking data/local/dictp/tri5_ali/extra_questions.txt ...
+--> data/local/dictp/tri5_ali/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dictp/tri5_ali]
+
+fstaddselfloops data/langp/tri5_ali/phones/wdisambig_phones.int data/langp/tri5_ali/phones/wdisambig_words.int
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/langp/tri5_ali
+Checking existence of separator file
+separator file data/langp/tri5_ali/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/langp/tri5_ali/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri5_ali/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/langp/tri5_ali/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/langp/tri5_ali/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri5_ali/phones/context_indep.txt
+--> data/langp/tri5_ali/phones/context_indep.int corresponds to data/langp/tri5_ali/phones/context_indep.txt
+--> data/langp/tri5_ali/phones/context_indep.csl corresponds to data/langp/tri5_ali/phones/context_indep.txt
+--> data/langp/tri5_ali/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/langp/tri5_ali/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 316 entry/entries in data/langp/tri5_ali/phones/nonsilence.txt
+--> data/langp/tri5_ali/phones/nonsilence.int corresponds to data/langp/tri5_ali/phones/nonsilence.txt
+--> data/langp/tri5_ali/phones/nonsilence.csl corresponds to data/langp/tri5_ali/phones/nonsilence.txt
+--> data/langp/tri5_ali/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/langp/tri5_ali/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 10 entry/entries in data/langp/tri5_ali/phones/silence.txt
+--> data/langp/tri5_ali/phones/silence.int corresponds to data/langp/tri5_ali/phones/silence.txt
+--> data/langp/tri5_ali/phones/silence.csl corresponds to data/langp/tri5_ali/phones/silence.txt
+--> data/langp/tri5_ali/phones/silence.{txt, int, csl} are OK
+
+Checking data/langp/tri5_ali/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri5_ali/phones/optional_silence.txt
+--> data/langp/tri5_ali/phones/optional_silence.int corresponds to data/langp/tri5_ali/phones/optional_silence.txt
+--> data/langp/tri5_ali/phones/optional_silence.csl corresponds to data/langp/tri5_ali/phones/optional_silence.txt
+--> data/langp/tri5_ali/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/langp/tri5_ali/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/langp/tri5_ali/phones/disambig.txt
+--> data/langp/tri5_ali/phones/disambig.int corresponds to data/langp/tri5_ali/phones/disambig.txt
+--> data/langp/tri5_ali/phones/disambig.csl corresponds to data/langp/tri5_ali/phones/disambig.txt
+--> data/langp/tri5_ali/phones/disambig.{txt, int, csl} are OK
+
+Checking data/langp/tri5_ali/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri5_ali/phones/roots.txt
+--> data/langp/tri5_ali/phones/roots.int corresponds to data/langp/tri5_ali/phones/roots.txt
+--> data/langp/tri5_ali/phones/roots.{txt, int} are OK
+
+Checking data/langp/tri5_ali/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 80 entry/entries in data/langp/tri5_ali/phones/sets.txt
+--> data/langp/tri5_ali/phones/sets.int corresponds to data/langp/tri5_ali/phones/sets.txt
+--> data/langp/tri5_ali/phones/sets.{txt, int} are OK
+
+Checking data/langp/tri5_ali/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/langp/tri5_ali/phones/extra_questions.txt
+--> data/langp/tri5_ali/phones/extra_questions.int corresponds to data/langp/tri5_ali/phones/extra_questions.txt
+--> data/langp/tri5_ali/phones/extra_questions.{txt, int} are OK
+
+Checking data/langp/tri5_ali/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 326 entry/entries in data/langp/tri5_ali/phones/word_boundary.txt
+--> data/langp/tri5_ali/phones/word_boundary.int corresponds to data/langp/tri5_ali/phones/word_boundary.txt
+--> data/langp/tri5_ali/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/langp/tri5_ali/phones/optional_silence.txt
+--> data/langp/tri5_ali/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/langp/tri5_ali/phones/disambig.txt has "#0" and "#1"
+--> data/langp/tri5_ali/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/langp/tri5_ali/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/langp/tri5_ali/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/langp/tri5_ali/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/langp/tri5_ali/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 36 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 70 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/langp/tri5_ali/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/langp/tri5_ali/oov.txt
+--> data/langp/tri5_ali/oov.int corresponds to data/langp/tri5_ali/oov.txt
+--> data/langp/tri5_ali/oov.{txt, int} are OK
+
+--> data/langp/tri5_ali/L.fst is olabel sorted
+--> data/langp/tri5_ali/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/langp/tri5_ali]
+
+---------------------------------------------------------------------
+Evaluating exp/tri5_ali on Thu Jun 11 02:22:50 UTC 2020
+---------------------------------------------------------------------
+
+tree-info exp/tri5_ali/tree
+tree-info exp/tri5_ali/tree
+fstminimizeencoded
+fsttablecompose data/langp_test/L_disambig.fst data/langp_test/G.fst
+fstdeterminizestar --use-log=true
+fstpushspecial
+fstisstochastic data/langp_test/tmp/LG.fst
+-0.0191112 -0.0199963
+[info]: LG not stochastic.
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/langp_test/phones/disambig.int --write-disambig-syms=data/langp_test/tmp/disambig_ilabels_3_1.int data/langp_test/tmp/ilabels_3_1.18238 data/langp_test/tmp/LG.fst
+fstisstochastic data/langp_test/tmp/CLG_3_1.fst
+0 -0.0199963
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri5_ali/graph/disambig_tid.int --transition-scale=1.0 data/langp_test/tmp/ilabels_3_1 exp/tri5_ali/tree exp/tri5_ali/final.mdl
+fstrmepslocal
+fsttablecompose exp/tri5_ali/graph/Ha.fst data/langp_test/tmp/CLG_3_1.fst
+fstrmsymbols exp/tri5_ali/graph/disambig_tid.int
+fstdeterminizestar --use-log=true
+fstminimizeencoded
+fstisstochastic exp/tri5_ali/graph/HCLGa.fst
+0.00048811 -0.0699174
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri5_ali/final.mdl exp/tri5_ali/graph/HCLGa.fst
+steps/decode.sh --config conf/decode.config --nj 6 --cmd run.pl exp/tri5_ali/graph data/test exp/tri5_ali/decode
+
+
+
+steps/decode.sh WARNING: Running speaker independent system decoding using a SAT model!
+steps/decode.sh WARNING: This is OK if you know what you are doing...
+
+
+
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd run.pl exp/tri5_ali/graph exp/tri5_ali/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri5_ali/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(2,21,115) and mean=45.4
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri5_ali/decode/log/analyze_lattice_depth_stats.log
+local/score.sh --cmd run.pl data/test exp/tri5_ali/graph exp/tri5_ali/decode
+local/score.sh: scoring with word insertion penalty=0.0,0.5,1.0
+
+===== run.sh script is finished =====

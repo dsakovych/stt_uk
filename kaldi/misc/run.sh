@@ -3,8 +3,8 @@
 . ./path.sh || exit 1
 . ./cmd.sh || exit 1
 
-nj=1
-stage=10
+nj=6
+stage=0
 
 lm_order=2
 oovSymbol='<UNK>'
