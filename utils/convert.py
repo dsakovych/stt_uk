@@ -24,3 +24,7 @@ def transform_audio_file(input_path, output_path=None, rate=8000):
     except Exception as e:
         logging.error(f"Error occured for input_path={input_path} and output_path={output_path}", exc_info=True)
         return "Failed!"
+
+
+if __name__ == '__main__':
+    transform_audio_file('test_uk.wav', 'test_uk2.wav')
