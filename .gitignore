@@ -20,5 +20,6 @@ venv/
 
 # ignore data files
 data
+!data/ner-uk-corpus.txt
 
 models/tf_checkpoints

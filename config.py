@@ -29,3 +29,15 @@ ydl_opts = {
     'keepvideo': False,
     'outtmpl': data.get('youtube') + '/%(title)s.%(ext)s'
 }
+
+class FlaskConfig(object):
+    ENV = ENV
+
+    APP_NAME = APP_NAME
+    APP_VERSION = "1.0"
+    APP_HOST = os.environ.get('APP_HOST', '127.0.0.1')
+    APP_PORT = os.environ.get('APP_PORT', 5000)
+
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'SECRET')
+    DEBUG = False
+    UPLOAD_FOLDER = os.path.join(DATA_DIR, 'upload')
