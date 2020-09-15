@@ -4,7 +4,6 @@ import logging
 import requests
 import tarfile
 import traceback
-import soundfile
 import pandas as pd
 
 from pathlib import Path
@@ -28,25 +27,13 @@ def create_dir(path, stderr=False):
         pass
 
 
-def delete_dir(path):
-    if os.path.exists(path):
-        shutil.rmtree(path)
+def delete(path):
+    if os.path.isfile(path) or os.path.islink(path):
+        os.remove(path)  # remove the file
+    elif os.path.isdir(path):
+        shutil.rmtree(path)  # remove dir and all contains
     else:
         logging.warning(f"Can't delete dir. Path not exists: {path}")
-
-
-def get_file_duration(file_path):
-    try:
-        f = soundfile.SoundFile(file_path)
-        res = {
-            "samples": len(f),
-            "sample_rate": f.samplerate,
-        }
-        return res["samples"]/res['sample_rate']
-    except Exception as e:
-        tb = str(traceback.format_exc())
-        logging.error(f"Error occurred with file={file_path}. Traceback:\n{tb}")
-        return 0
 
 
 def download_file(url, save_path):

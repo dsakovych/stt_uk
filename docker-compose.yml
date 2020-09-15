@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web-app:
+    env_file:
+      - variables.env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+       - 5000:5000
+    network_mode: "host"

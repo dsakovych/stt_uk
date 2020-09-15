@@ -3,7 +3,7 @@ import re
 import shutil
 from flask import Flask, request, redirect, url_for, send_from_directory
 from werkzeug.utils import secure_filename
-from config import FlaskConfig, TMP_DIR
+from config import FlaskConfig, DATA_DIR
 from utils.decode_kaldi import kaldi_stt
 
 app = Flask(__name__)
@@ -24,17 +24,17 @@ def upload_file():
             filename = secure_filename(file.filename)
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_path)
-            tmp_path = os.path.join(TMP_DIR, filename)
-
-            shutil.copy2(file_path, tmp_path)
+            # tmp_path = os.path.join(DATA_DIR, filename)
+            #
+            # shutil.copy2(file_path, tmp_path)
             wer = ''
             wer_details = ''
             if text:
                 text = regex_tokenize(text)
-                decoded_text, wer, wer_details = kaldi_stt(tmp_path, text)
+                decoded_text, wer, wer_details = kaldi_stt(file_path, text)
                 # decoded_text = decoded_text[0]
             else:
-                decoded_text = kaldi_stt(tmp_path)
+                decoded_text = kaldi_stt(file_path)
 
             return """
             <!doctype html>
@@ -87,4 +87,4 @@ def uploaded_file(filename):
                                filename)
 
 
-app.run(threaded=True)
+# app.run(threaded=True)
